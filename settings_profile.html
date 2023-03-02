@@ -397,7 +397,7 @@
 													<div class="label">Телефон</div>
 
 													<div class="field">
-														<input type="tel" name="" value="+7 (432)-122-12-32" class="input">
+														<input type="tel" name="" class="input" id="phone" value="+79181233423">
 													</div>
 												</div>
 											</div>
@@ -413,6 +413,12 @@
 											<div class="submit">
 												<button type="submit" class="submit_btn">Сохранить</button>
 											</div>
+
+											<div class="privacy">
+												<img src="images/info.svg" alt="">
+												<span>Продолжая пользоваться сервисом, вы принимаете условия <a href="">пользовательского соглашения</a></span>
+											</div>
+
 										</form>
 									</section>
 
@@ -483,5 +489,21 @@
 		<script src="js/nice-select.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
+
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css" rel="stylesheet" />
+		<script src="https://unpkg.com/libphonenumber-js@1.9.6/bundle/libphonenumber-max.js"></script>
+		<script src="js/phone.js"></script>
+
+		<style>
+			#phone{
+				padding-left: 50px;
+			}
+		</style>
+
+
 	</body>
 </html>

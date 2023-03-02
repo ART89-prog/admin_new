@@ -782,16 +782,6 @@
         padding: 7px 19px;
     }
 
-    .dialog .message .prompt .text
-    {
-        font-size: 18px;
-
-        max-width: calc(100% - 55px);
-        margin-top: 12px;
-        padding: 8px 12px;
-    }
-
-
     .dialog .message .audio_message .audio_wave
     {
         width: 176px;
@@ -921,7 +911,7 @@
         font-size: 15px;
         line-height: 21px;
 
-        padding: 20px;
+        padding: 24px 24px 0;
     }
 
     .dialog .prompt_text span,
@@ -1006,6 +996,12 @@
     /*-----------------
         Course info
     -----------------*/
+
+    .course_info .thumb{
+        width: 100%;
+        padding-bottom: 53%;
+        height: auto;
+    }
     .course_info .thumb + *
     {
         width: 100%;
@@ -1360,6 +1356,7 @@
     }
     .create-report button {
         font-size: 12px;
+        margin-bottom: 10px;
     }
 
     .advice_items,
@@ -1398,6 +1395,617 @@
     .analytics-enabled_time {
         margin-left: 0;
         margin-top: 22px;
+    }
+
+
+    .weekly-statistics_items {
+        flex-wrap: wrap;
+    }
+    .weekly-statistics_items > * {
+        width: calc(100%/2 - 16px);
+    }
+    .rating-block_items > * {
+        width: 100%;
+    }
+    .activity_item .day {
+        display: none;
+    }
+    .activity_item:nth-child(1) .day-mob,
+    .activity_item:nth-child(7) .day-mob,
+    .activity_item:nth-child(14) .dayv,
+    .activity_item:nth-child(21) .day-mob,
+    .activity_item:nth-child(28) .day-mob {
+        display: block;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: -0.3px;
+        color: #7874A3;
+    }
+    .activity_info {
+        padding: 11px 15px;
+    }
+    .rating .nice-select {
+        height: 29px;
+    }
+    .greeting_left {
+        display: none;
+    }
+    .greeting_left-mob {
+        display: block;
+        position: relative;
+    }
+    .greeting_left-mob .greeting_info {
+        display: flex;
+        align-items: center;
+    }
+    .greeting {
+        position: relative;
+    }
+    .greeting_right {
+        position: absolute;
+        top: -11px;
+        right: 11px;
+    }
+    .weekly-statistics_item-title {
+        font-size: 15px;
+    }
+    .activity_items {
+        margin-left: -3px;
+        position: relative;  
+    }
+    .activity_item {
+        width: calc(100%/30 - 3px);
+        margin-left: 3px;  
+        position: static;
+    }
+    .modul_item-bottom-text br {
+        display: none;
+    }
+    .select-right span {
+        display: none;
+    }
+    .modul_item-bottom-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .modul_item {
+        padding: 14px;
+    }
+    .greeting_info-text {
+        margin-top: 17px;
+    }
+
+    .greeting_steps {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .greeting_step .line {
+        width: 6px;
+        height: 20px;
+        background: #369D53;
+        margin-left: 8px;
+        margin-right: 0;
+        margin-top: -5px;
+    
+    }
+    .greeting_step {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .greeting_step-text {
+        bottom: 50%;
+    }
+    .greeting_step:nth-child(1) .greeting_step-text {
+        left: 35px;
+        bottom: 7px;
+    }
+    .greeting_step:nth-child(2) .greeting_step-text {
+        left: 35px;
+        transform: translateX(0%);
+        bottom: 7px;
+    }
+    .greeting_step.active .greeting_step-wrap:nth-child(1) .greeting_step-text {
+        left: 35px;
+        transform: translateX(0%);
+        bottom: 7px;
+    }
+    .greeting_step.active .greeting_step-wrap2 .greeting_step-text {
+        left: 35px;
+        transform: translateX(0%);
+        bottom: 7px;
+    }
+    .greeting.pb {
+        padding-bottom: 14px;
+    }
+    .rating .block_title {
+        max-width: 100%;
+        width: calc(100% - 138px);
+    }
+
+    .courses .row.not_slide > *
+    {
+        width: calc(100%);
+    }
+
+
+
+
+
+    /* line-top */ 
+    .line-top {
+        padding: 8px 0 13px;
+    }
+    .line-top .cont {
+        align-items: flex-end;
+    }
+    .line-top_box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .line-top_name {
+        margin-bottom: 4px;
+        margin-right: 0;
+    }
+    .line-top_time {
+        margin-bottom: 9px;
+        margin-right: 0;
+    }
+
+
+    /* webinar.html */
+    .greeting_status {
+        display: none;
+    }
+    .webinar .greeting_left-mob {
+        position: relative;
+        width: 100%;
+    }
+    .greeting_left-label {
+        position: absolute;
+        top: -11px;
+        right: 11px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FFFFFF;
+        padding: 3px 10px;
+        background: #0500AF;
+        border-radius: 57px;
+    }
+
+
+
+    /* webinar2.html */
+    .webinar_item {
+        padding: 15px;
+    }
+    .webinar_item-time {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;        
+    }
+    .webinar_item-time span {
+        margin-left: 0;
+        display: block;
+        margin-top: 4px;
+    }
+    .webinar_item-name {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+
+    /* webinar3.html */
+    .calendar {
+        padding: 17px 15px 25px;
+    }
+    .calendar_head {
+        flex-wrap: wrap;        
+    }
+    .calendar_head-link {
+        width: 100%;
+        margin-top: 32px;
+        margin-left: 0;
+    }
+    .calendar_head-left {
+        justify-content: space-between;
+        width: 100%;
+    }
+    .calendar_head-title {
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .calendar_item-day {
+        display: none;
+    }
+    .calendar_item-day-mob {
+        display: block;
+        padding: 9px;
+        font-family: 'Inter';
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 24px;
+        color: #19181A;
+    }
+    .modal-video_title {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .modal-video .video_new {
+        width: calc(100% - 30px);
+    }
+    .modal-video_link {
+        margin: 15px auto 20px;
+    }
+    .calendar_item-info {
+        display: none;
+    }
+    .calendar_item {
+        height: auto;
+    }
+    .calendar_item:nth-child(1), 
+    .calendar_item:nth-child(2), 
+    .calendar_item:nth-child(3), 
+    .calendar_item:nth-child(4), 
+    .calendar_item:nth-child(5), 
+    .calendar_item:nth-child(6), 
+    .calendar_item:nth-child(7) {
+        height: auto;
+    }
+    .calendar_item-links {
+        display: none;
+    }
+    .calendar_item-day,
+    .calendar_item:nth-child(25),
+    .calendar_item:nth-child(26),
+    .calendar_item:nth-child(27),
+    .calendar_item:nth-child(28),
+    .calendar_item:nth-child(29),
+    .calendar_item:nth-child(30),
+    .calendar_item:nth-child(31) {
+        border-bottom: none;
+    }
+    .calendar_item:nth-child(7), 
+    .calendar_item:nth-child(14), 
+    .calendar_item:nth-child(21), 
+    .calendar_item:nth-child(28), 
+    .calendar_item:nth-child(31) {
+        border-right: none;
+    }
+    .calendar_item {
+        border: none;
+    }
+    .calendar_item-day-mob {
+        text-align: center;
+    }
+    .calendar_item {
+        text-align: center;
+        position: relative;
+    }
+    .calendar_item-index {
+        display: block;
+        position: absolute;
+        top: 1px;
+        right: calc(50% - 21px);
+        z-index: 1;
+        width: 15px;
+        height: 15px;
+        background: #C9FBC4;
+        border-radius: 50%;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 14px;
+        text-align: center;
+        color: #0E9700;
+    }
+    .calendar_item-date {
+        padding: 13px;        
+    }
+    .webinar-modal_item-text {
+        line-height: 18px;
+    }
+    .webinar-modal_item .icon {
+        top: 10px;
+        right: 9px;
+    }
+    .webinar-modal_item.gray {
+        background: #F2F2F2;        
+    }
+    .webinar-modal_item.gray .webinar-modal_item-title {
+        color: #828282;
+    }
+    .webinar-modal_item.gray .webinar-modal_item-text {
+        color: #BDBDBD;
+    }
+    .calendar_item:hover .calendar_item-date {
+        color: var(--main_color);        
+    }
+    .calendar_item:hover .calendar_item-date.active {
+        color:#fff;
+    }
+    .calendar_item:hover .calendar_item-date::before {
+        background: none;
+    }
+    .calendar_item-date.active {
+        background: var(--main_color);
+        width: 46px;
+        height: 46px;
+        border-radius: 50%;
+        color: #fff;
+    }
+    .calendar .mini_modal_btn {
+        display: none;
+    }
+    .calendar .mini_modal {
+        display: none;
+    }
+    .calendar_modal-mob span {
+        display: block;
+    }
+
+
+
+
+    /* webinar4.html */
+    .webinar a.page_title {
+        font-size: 22px;
+        margin-bottom: 0;
+    }
+
+
+    /* webinar5.html */
+    .webinar-test_wrapper {
+        padding: 70px 20px;
+    }
+
+
+    .dialog .head .what_do {
+    }
+
+    /* inclusion.html */
+    .inclusion_items > * {
+        width: calc(100%/2 - 15px);
+        padding: 14px 14px 12px 14px;
+    }
+    .inclusion_item-title {
+        font-size: 15px;
+    }
+    .dialog .head .what_do .btn {
+        margin-bottom: 10px;
+    }
+
+
+    
+    /* training-course */
+    .training-course_items > * {
+        width: calc(100%/2 - 25px);
+    }
+    .training-course .page_title {
+        margin-bottom: 35px;
+    }
+    .training-course_item-image:hover img {
+        transform: scale(1);
+    }
+    .training-course_item-image:nth-child(4):hover {
+        transform: scale(1);
+    }
+    .training-course_item-image:hover .training-course_item-info {
+        display: none;
+    }
+
+
+    .dialog .message .prompt .text-information {
+        width: 270px;
+    }
+    .dialog .message .prompt .text .info-hint {
+        font-size: 14px;
+    }
+    .dialog .message .prompt .text .name {
+        font-size: 15px;
+    }
+
+    .webinar-test_right .webinar-test_link {
+        margin-left: 10px;
+    }
+    .webinar-test .files {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .webinar-test_top {
+        margin-left: 20px;
+        margin-right: 0px;
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+
+    .webinar-description_title {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+
+
+
+
+    .rating .select-right {
+        display: none;
+    }    
+    .rating .block_title {
+        width: 100%;
+    }
+    .webinar-online {
+        text-align: start;
+        margin-top: 15px;
+    }
+    .webinar-test_top {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    /*.simulators-new .simulator_items {
+        margin-left: 0px;
+    }
+    .simulators-new .simulator_items > * {
+        width: 100%;
+        margin-left: 0px;
+    }*/
+
+    .trainer_items  {
+        /*margin-left: 0px;*/
+    }
+    .trainer_items  > * {
+        /*width: 100%;
+        margin-left: 0px;*/
+    }
+
+    .dialog .head {
+        padding: 24px 24px 32px;
+    }
+    .dialog .image_wrap {
+        padding: 24px;
+    }
+    .dialog .prompt_title {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 0px;
+        padding: 15px 24px 12px;
+    }
+    .dialog .prompt_text, 
+    .dialog .error_text, 
+    .dialog .success_text {
+       
+    }
+    .dialog .image_wrap .image:after {
+        top: 24px;
+        left: 24px;
+        width: calc(100% - 48px);
+        height: calc(100% - 48px);
+    }
+    .dialog .prompt_text, 
+    .dialog .error_text, 
+    .dialog .success_text {
+        padding: 0px 24px;
+        margin-bottom: 12px;
+    }
+
+
+    .date_message{
+        line-height: 41px;
+        white-space: nowrap;
+        margin-left: 0;
+    }
+
+     .dialog .head .what_do .btn span{
+        display: none;
+    }
+
+
+
+    .mistake_items {
+        flex-wrap: wrap;
+        margin-left: 0;
+    }
+    .mistake_items > * {
+        margin-left: 0px;
+        width: 100%;
+    }
+
+
+
+
+    .report_modal form .line {
+        flex-direction: column;
+        margin-left: 0px;
+        margin-bottom: 12px;
+    }
+    .report_modal form .line > * {    
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+
+    .recommendations .mistake_items {
+        margin-left: 0px;
+    }
+    .recommendations .mistake_items > * {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .detailed_items > * {
+        width: calc(100%/2 - 15px);
+        padding: 12px;
+    }
+
+
+    .simulators-new .simulator_items.not_slide > * {
+        width: calc(100%);
+    }
+
+    .trainer_items.not_slide > * {
+        width: calc(100%);
+    }
+
+
+    .create-report table thead th:nth-child(2) {
+        padding: 17px 150px;
+    }
+
+    .line-top_flex_start .cont{
+       align-items: center;
+    }
+
+    .top_line_link{
+        white-space: inherit;
+        height: auto;
+        line-height: initial;
+        padding: 5px 12px;
+    }
+
+    .audio_training {
+        flex-direction: column;
+    }
+    .audio_training-left {
+        margin-bottom: 20px;
+    }
+    .audio_training .audio_message {
+        width: 100%;
+    }
+
+    .task_items > * {
+        width: calc(100%/2 - 16px);
+        padding: 14px;
+    }
+    .col_main .title {
+        font-size: 18px;
+    }
+    .task {
+        padding: 15px;
+    }
+
+    .task2 .task_items > * {
+        width: calc(100%/2 - 16px);
+        padding: 14px;
+    }
+    
+    .task3 .task_items > * {
+        width: calc(100%/2 - 16px);
+        padding: 14px;
+    }
+
+
+    .modal-page6 form .line {
+        flex-direction: column;
+    }
+    .modal-page6 form .field {
+        margin-bottom: 10px;
     }
 
 

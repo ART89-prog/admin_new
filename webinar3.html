@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#0B00D8">
+		<meta name="theme-color" content="#0B00D8">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/nice-select.css">
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+
+		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main webinar">
+				<div class="line-top">
+					<div class="cont">
+						<div class="line-top_box">
+							<div class="line-top_name">Вебинар по продажам №12</div>	
+							<div class="line-top_time">22 октября 2022 в 13:00 (МСК)</div>
+							<div class="line-top_status">Уже идет</div>
+						</div>
+						<a href="#" class="line-top_link">
+							<span>Открыть</span>
+							<svg class="icon"><use xlink:href="images/sprite.svg#link-arrow"></use></svg>
+						</a>
+					</div>
+				</div>
+				<header>
+					<div class="cont row">
+						<div class="logo">
+							<img src="images/logo.svg" alt="">
+						</div>
+
+						<div class="wallet">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_wallet"></use></svg>
+							<span>1243</span>
+						</div>
+
+						<div class="sep"></div>
+
+						<div class="account">
+							<a href="/" class="settings_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg>
+							</a>
+
+							<div class="user">
+								<div class="avatar">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									<!-- <img data-src="" alt="" class="lozad"> -->
+								</div>
+
+								<div class="name">Модератор</div>
+							</div>
+
+							<a href="/" class="logout_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
+							</a>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="row">
+						<button class="menu_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+						</button>
+
+						<div class="page_title">Сводка</div>
+
+						<div class="wallet">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_wallet"></use></svg>
+							<span>1243</span>
+						</div>
+
+						<div class="nitifications new">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_nitifications"></use></svg>
+						</div>
+
+						<div class="account modal_cont">
+							<button class="user btn mini_modal_btn" data-modal-id="#account_modal">
+								<div class="avatar">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									<img data-src="images/tmp/user_avatar.jpg" alt="" class="lozad">
+								</div>
+
+								<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+							</button>
+
+							<div class="mini_modal" id="account_modal">
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg>
+									<span>Настройки</span>
+								</a></div>
+
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
+									<span>Выход</span>
+								</a></div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="content_flex">
+					<div class="cont row">
+						<aside>
+							<button class="close_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+							</button>
+
+							<div class="menu">
+								<div class="item">
+									<a href="/">
+										<div class="icon icon1">
+											<svg><use xlink:href="images/sprite.svg#ic_category1"></use></svg>
+										</div>
+										<span>Сводка</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon2 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category2"></use></svg>
+										</div>
+										<span>Мои задачи</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a  href="#" class="sub_link active open">
+										<div class="icon icon3 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category3"></use></svg>
+										</div>
+										<span>Курсы</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu" style="display: block;">
+										<div><a class="active">
+											<span class="count">3</span>
+											<span>Все курсы</span>
+										</a></div>
+										<div><a href="/">Новые курсы</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="#" class="sub_link">
+										<div class="icon icon4 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category4"></use></svg>
+										</div>
+										<span>Обратная связь</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/">По тренажерам</a></div>
+										<div><a href="/">По заданиям</a></div>
+										<div><a href="/">По другому</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5">
+											<svg><use xlink:href="images/sprite.svg#ic_category5"></use></svg>
+										</div>
+										<span>Тренажеры</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5_2">
+											<svg><use xlink:href="images/sprite.svg#ic_category5_2"></use></svg>
+										</div>
+										<span>Аудио тренажеры</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5_3">
+											<svg><use xlink:href="images/sprite.svg#ic_category5_3"></use></svg>
+										</div>
+										<span>Тренажеры действий</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon6">
+											<svg><use xlink:href="images/sprite.svg#ic_category6"></use></svg>
+										</div>
+										<span>Новости</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon7">
+											<svg><use xlink:href="images/sprite.svg#ic_category7"></use></svg>
+										</div>
+										<span>Опросы</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon8">
+											<svg><use xlink:href="images/sprite.svg#ic_category8"></use></svg>
+										</div>
+										<span>Обсуждения</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/" class="active">
+										<div class="icon icon9">
+											<svg><use xlink:href="images/sprite.svg#ic_category9"></use></svg>
+										</div>
+										<span>Вебинары</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon10">
+											<svg><use xlink:href="images/sprite.svg#ic_category10"></use></svg>
+										</div>
+										<span>Подкасты</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon11">
+											<svg><use xlink:href="images/sprite.svg#ic_category11"></use></svg>
+										</div>
+										<span>Файлы</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon12">
+											<svg><use xlink:href="images/sprite.svg#ic_category12"></use></svg>
+										</div>
+										<span>Коллеги</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon13">
+											<svg><use xlink:href="images/sprite.svg#ic_category13"></use></svg>
+										</div>
+										<span>Настройки</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/" class="sub_link">
+										<div class="icon icon14">
+											<svg><use xlink:href="images/sprite.svg#ic_category14"></use></svg>
+										</div>
+										<span>Управление</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/"></a></div>
+									</div>
+								</div>
+							</div>
+						</aside>
+
+						<section class="content">
+							<h1 class="page_title">
+								Вебинары
+								<div class="tooltip modal_btn" data-content="#video_modal" data-tippy-content="В мае этого года Nextjs неожиданно выпустил в своём блоге RFC (request for comments). В нём речь идёт, в первую очередь, о новой абстракции — layouts, а также о множестве связанных изменений, нацеленных на ускорение, улучшение DX">
+									<svg class="icon_tippy"><use xlink:href="images/sprite.svg#tooltip2"></use></svg>					
+								</div>									
+							</h1>
+							<section class="calendar">
+								<div class="calendar_head">
+									<div class="calendar_head-left">
+										<div class="calendar_head-title">Май, 2022</div>
+										<div class="calendar_head-arrow">										
+											<button class="btn-prev">
+												<svg class="icon"><use xlink:href="images/sprite.svg#btn-prev"></use></svg>
+											</button>
+											<button class="btn-next">
+												<svg class="icon"><use xlink:href="images/sprite.svg#btn-next"></use></svg>
+											</button>
+										</div>	
+									</div>										
+									<div class="calendar_head-link">
+										<a href="#" class="active">Все (18)</a>
+										<a href="#">События (3)</a>
+										<a href="#">Дедлайны(15)</a>
+									</div>									
+								</div>
+
+								<div class="calendar_items">
+									<div class="calendar_item">
+										<div class="calendar_item-day">ПОНЕДЕЛЬНИК</div>
+										<div class="calendar_item-day-mob">П</div>
+										<div class="calendar_item-date">1</div>	
+										<div class="calendar_item-info">
+											<div class="calendar_item-info-name">Вебинар по продажам</div>
+											<div class="calendar_item-info-time">11 мая в 12:00</div>
+											<div class="calendar_item-info-text">Ждем вас в zoom! С собой тетрадки и ручки!Еще какой то текст который сокращается... </div>
+											<a href=""><svg class="icon-calendar"><use xlink:href="images/sprite.svg#arrow5"></use></svg></a>
+										</div>									
+									</div>
+									<div class="calendar_item">
+										<div class="calendar_item-day">ВТОРНИК</div>
+										<div class="calendar_item-day-mob">В</div>
+										<div class="calendar_item-date">2</div>	
+										<div class="calendar_item-info">
+											<div class="calendar_item-info-name">Вебинар по продажам</div>
+											<div class="calendar_item-info-time">11 мая в 12:00</div>
+											<div class="calendar_item-info-text">Ждем вас в zoom! С собой тетрадки и ручки!Еще какой то текст который сокращается... </div>
+											<a href=""><svg class="icon-calendar"><use xlink:href="images/sprite.svg#arrow5"></use></svg></a>
+										</div>	
+									</div>
+									<div class="calendar_item">
+										<div class="calendar_item-day">СРЕДА</div>
+										<div class="calendar_item-day-mob">С</div>
+										<div class="calendar_item-date">3</div>	
+									</div>
+									<div class="calendar_item">
+										<div class="calendar_item-day">ЧЕТВЕРГ</div>
+										<div class="calendar_item-day-mob">Ч</div>
+										<div class="calendar_item-date">4</div>	
+									</div>
+									<div class="calendar_item">
+										<div class="calendar_item-day">ПЯТНИЦА</div>
+										<div class="calendar_item-day-mob">П</div>
+										<div class="calendar_item-date">5</div>	
+									</div>
+									<div class="calendar_item">
+										<div class="calendar_item-day">СУББОТА</div>
+										<div class="calendar_item-day-mob">С</div>
+										<div class="calendar_item-date">6</div>	
+									</div>
+									<div class="calendar_item">
+										<div class="calendar_item-day">ВОСКРЕСЕНЬЕ</div>
+										<div class="calendar_item-day-mob">В</div>
+										<div class="calendar_item-date">7</div>	
+									</div>
+									<div class="calendar_item">
+										<div class="calendar_item-date">8</div>	
+									</div>
+									<div class="calendar_item">
+										<div class="calendar_item-date">9</div>	
+									</div>
+									<div class="calendar_item">
+										<div class="calendar_item-date">10</div>
+										<div class="calendar_item-info">
+											<div class="calendar_item-info-name">Вебинар по продажам</div>
+											<div class="calendar_item-info-time">11 мая в 12:00</div>
+											<div class="calendar_item-info-text">Ждем вас в zoom! С собой тетрадки и ручки!Еще какой то текст который сокращается... </div>
+											<a href=""><svg class="icon-calendar"><use xlink:href="images/sprite.svg#arrow5"></use></svg></a>
+										</div>		
+									</div>
+									<div class="calendar_item modal_cont">										
+										<div class="calendar_item-date active modal_btn" data-content="#calendar_modal-mob">11</div>
+										<div class="calendar_item-index modal_btn" data-content="#calendar_modal-mob">10</div>
+										<a href="#" class="mini_modal_btn calendar_item-more" data-modal-id="#webinar-modal">
+											<span>и еще 5</span>
+										</a>
+										<div class="mini_modal" id="webinar-modal">
+											<div class="webinar-modal_head">
+												<div class="webinar-modal_title">15 мая 2022</div>
+												<button>
+													<svg class="icon"><use xlink:href="images/sprite.svg#close"></use></svg>
+												</button>													
+											</div>
+											
+											<div class="webinar-modal_items">
+												<a href="#" class="webinar-modal_item red">
+													<div class="webinar-modal_item-box">
+														<div class="webinar-modal_item-title">Как полюбить работу можно</div>
+														<div class="webinar-modal_item-text">Ждем вас в zoom! С собой тетрадки и ручки!</div>	
+													</div>													
+													<svg class="icon"><use xlink:href="images/sprite.svg#arrow5"></use></svg>
+												</a>
+												<a href="#" class="webinar-modal_item green">
+													<div class="webinar-modal_item-box">
+														<div class="webinar-modal_item-title">Как полюбить работу можно</div>
+														<div class="webinar-modal_item-text">Ждем вас в zoom! С собой тетрадки и ручки!</div>	
+													</div>													
+													<svg class="icon"><use xlink:href="images/sprite.svg#arrow5"></use></svg>
+												</a>
+												<a href="#" class="webinar-modal_item">
+													<div class="webinar-modal_item-box">
+														<div class="webinar-modal_item-title">Как полюбить работу можно</div>
+														<div class="webinar-modal_item-text">Ждем вас в zoom! С собой тетрадки и ручки!</div>	
+													</div>													
+													<svg class="icon"><use xlink:href="images/sprite.svg#arrow5"></use></svg>
+												</a>
+												<a href="#" class="webinar-modal_item">
+													<div class="webinar-modal_item-box">
+														<div class="webinar-modal_item-title">Как полюбить работу можно</div>
+														<div class="webinar-modal_item-text">Ждем вас в zoom! С собой тетрадки и ручки!</div>	
+													</div>													
+													<svg class="icon"><use xlink:href="images/sprite.svg#arrow5"></use></svg>
+												</a>
+												<a href="#" class="webinar-modal_item">
+													<div class="webinar-modal_item-box">
+														<div class="webinar-modal_item-title">Как полюбить работу можно</div>
+														<div class="webinar-modal_item-text">Ждем вас в zoom! С собой тетрадки и ручки!</div>	
+													</div>													
+													<svg class="icon"><use xlink:href="images/sprite.svg#arrow5"></use></svg>
+												</a>
+											</div>										
+										</div>
+
+
+										<div class="calendar_item-links">
+											<a href="#" class="modal_btn gray" data-content="#video_modal">
+												<span>Как полюбить работу</span>
+												<svg class="icon"><use xlink:href="images/sprite.svg#arrow5"></use></svg>
+											</a>
+											<a href="#" class="modal_btn" data-content="#video_modal">
+												<span>Как полюбить работу</span>
+												<svg class="icon"><use xlink:href="images/sprite.svg#arrow5"></use></svg>
+											</a>
+											<a href="#" class="modal_btn" data-content="#video_modal">
+												<span>Как полюбить работу</span>
+												<svg class="icon"><use xlink:href="images/sprite.svg#arrow5"></use></svg>
+											</a>
+											<a href="#" class="modal_btn" data-content="#video_modal">
+												<span>Как полюбить работу</span>
+												<svg class="icon"><use xlink:href="images/sprite.svg#arrow5"></use></svg>
+											</a>
+										</div>	
+									</div>
+									<div class="calendar_item">
+										<div class="calendar_item-date">12</div>	
+										<div class="calendar_item-info green">
+											<div class="calendar_item-info-name">Вебинар по продажам</div>
+											<div class="calendar_item-info-time">11 мая в 12:00</div>
+											<div class="calendar_item-info-text">Ждем вас в zoom! С собой тетрадки и ручки!Еще какой то текст который сокращается... </div>
+											<a href=""><svg class="icon-calendar"><use xlink:href="images/sprite.svg#arrow5"></use></svg></a>
+										</div>	
+									</div>
+									<div class="calendar_item">
+										<div class="calendar_item-date">13</div>	
+									</div>
+									<div class="calendar_item">
+										<div class="calendar_item-date">14</div>	
+										<div class="calendar_item-links mod_3">
+											<a href="#" class="modal_btn" data-content="#video_modal">
+												<span>Вебинар по продажам</span>
+												<svg class="icon"><use xlink:href="images/sprite.svg#arrow5"></use></svg>
+											</a>
+											<a href="#" class="modal_btn" data-content="#video_modal">
+												<span>Вебинар по продажам</span>
+												<svg class="icon"><use xlink:href="images/sprite.svg#arrow5"></use></svg>
+											</a>
+											<a href="#" class="modal_btn" data-content="#video_modal">
+												<span>Вебинар по продажам</span>
+												<svg class="icon"><use xlink:href="images/sprite.svg#arrow5"></use></svg>
+											</a>
+										</div>	
+									</div>
+									<div class="calendar_item">
+										<div class="calendar_item-date modal_btn" data-content="#calendar_modal-mob2">15</div>
+										<div class="calendar_item-index modal_btn" data-content="#calendar_modal-mob2">2</div>
+										<div class="calendar_item-links mod_2">
+											<a href="#" class="modal_btn" data-content="#video_modal">
+												<span>Вебинар по продажам</span>
+												<svg class="icon"><use xlink:href="images/sprite.svg#arrow5"></use></svg>
+											</a>
+											<a href="#" class="modal_btn" data-content="#video_modal">
+												<span>Вебинар по продажам</span>
+												<svg class="icon"><use xlink:href="images/sprite.svg#arrow5"></use></svg>
+											</a>
+										</div>	
+									</div>
+									<div class="calendar_item">
+										<div class="calendar_item-date">16</div>	
+									</div>
+									<div class="calendar_item">
+										<div class="calendar_item-date modal_btn" data-content="#calendar_modal-mob3">17</div>	
+										<div class="calendar_item-index modal_btn" data-content="#calendar_modal-mob3">1</div>
+									</div>
+									<div class="calendar_item">
+										<div class="calendar_item-date">18</div>	
+									</div>
+									<div class="calendar_item">
+										<div class="calendar_item-date">19</div>	
+									</div>
+									<div class="calendar_item">
+										<div class="calendar_item-date">20</div>	
+									</div>
+									<div class="calendar_item">
+										<div class="calendar_item-date modal_btn" data-content="#calendar_modal-mob4">21</div>	
+									</div>
+									<div class="calendar_item">
+										<div class="calendar_item-date">22</div>	
+									</div>
+									<div class="calendar_item">
+										<div class="calendar_item-date modal_btn" data-content="#calendar_modal-mob5">23</div>	
+									</div>
+									<div class="calendar_item">
+										<div class="calendar_item-date modal_btn" data-content="#calendar_modal-mob6">24</div>
+										<div class="calendar_item-index modal_btn" data-content="#calendar_modal-mob6">5</div>	
+									</div>
+									<div class="calendar_item">
+										<div class="calendar_item-date">25</div>	
+									</div>
+									<div class="calendar_item">
+										<div class="calendar_item-date">26</div>	
+									</div>
+									<div class="calendar_item">
+										<div class="calendar_item-date">27</div>	
+									</div>
+									<div class="calendar_item">
+										<div class="calendar_item-date">28</div>	
+									</div>
+									<div class="calendar_item">
+										<div class="calendar_item-date">29</div>	
+									</div>
+									<div class="calendar_item">
+										<div class="calendar_item-date">30</div>	
+									</div>
+									<div class="calendar_item">
+										<div class="calendar_item-date">31</div>	
+									</div>
+								</div>
+							</section>
+
+
+
+
+						
+							<footer>
+								<div class="logo">
+									<img src="images/logo.svg" alt="">
+
+									<div class="desc">Описание первой компании 123</div>
+								</div>
+
+								<div class="contacts location">
+									<div class="name">Адрес</div>
+
+									<div class="val">г. Москва, ул. Ломоносова, д. 75</div>
+								</div>
+
+								<div class="contacts email">
+									<div class="name">Электронная почта</div>
+
+									<div class="val">
+										<div><a href="mailto:company1@gmail.com">company1@gmail.com</a></div>
+									</div>
+								</div>
+
+								<div class="contacts phone">
+									<div class="name">Телефон</div>
+
+									<div class="val">
+										<div><a href="tel:+79219879988">+79219879988</a></div>
+									</div>
+								</div>
+							</footer>
+						</section>
+					</div>
+				</section>
+			</div>
+		</div>
+
+
+
+
+		<section class="modal-calendar" id="calendar_modal-mob">			
+			<div class="calendar-modal_title">15 мая 2022</div>											
+			<div class="webinar-modal_items">
+				<a href="#" class="webinar-modal_item green">
+					<div class="webinar-modal_item-box">
+						<div class="webinar-modal_item-title">Вебинар по продажам</div>
+						<div class="webinar-modal_item-text">в 12:00</div>	
+					</div>													
+					<svg class="icon"><use xlink:href="images/sprite.svg#arrow6"></use></svg>
+				</a>	
+				<a href="#" class="webinar-modal_item red">
+					<div class="webinar-modal_item-box">
+						<div class="webinar-modal_item-title">Вебинар по продажам</div>
+						<div class="webinar-modal_item-text">в 12:00</div>	
+					</div>													
+					<svg class="icon"><use xlink:href="images/sprite.svg#arrow7"></use></svg>
+				</a>	
+				<a href="#" class="webinar-modal_item green">
+					<div class="webinar-modal_item-box">
+						<div class="webinar-modal_item-title">Вебинар по продажам</div>
+						<div class="webinar-modal_item-text">в 12:00</div>	
+					</div>													
+					<svg class="icon"><use xlink:href="images/sprite.svg#arrow6"></use></svg>
+				</a>	
+				<a href="#" class="webinar-modal_item green">
+					<div class="webinar-modal_item-box">
+						<div class="webinar-modal_item-title">Вебинар по продажам</div>
+						<div class="webinar-modal_item-text">в 12:00</div>	
+					</div>													
+					<svg class="icon"><use xlink:href="images/sprite.svg#arrow6"></use></svg>
+				</a>				
+			</div>	
+		</section>
+
+
+		<section class="modal-calendar" id="calendar_modal-mob2">			
+			<div class="calendar-modal_title">15 мая 2022</div>											
+			<div class="webinar-modal_items">
+				<a href="#" class="webinar-modal_item green">
+					<div class="webinar-modal_item-box">
+						<div class="webinar-modal_item-title">Вебинар по продажам</div>
+						<div class="webinar-modal_item-text">в 12:00<br>
+							Ждем вас в zoom! С собой тетрадки и ручки!</div>	
+					</div>													
+					<svg class="icon"><use xlink:href="images/sprite.svg#arrow6"></use></svg>
+				</a>	
+				<a href="#" class="webinar-modal_item red">
+					<div class="webinar-modal_item-box">
+						<div class="webinar-modal_item-title">Как полюбить работу</div>
+						<div class="webinar-modal_item-text">в 15:00<br>
+							Ждем вас в zoom! С собой тетрадки и ручки!</div>	
+					</div>													
+					<svg class="icon"><use xlink:href="images/sprite.svg#arrow7"></use></svg>
+				</a>					
+			</div>	
+		</section>
+
+
+		<section class="modal-calendar" id="calendar_modal-mob3">			
+			<div class="calendar-modal_title">15 мая 2022</div>											
+			<div class="webinar-modal_items">
+				<a href="#" class="webinar-modal_item green">
+					<div class="webinar-modal_item-box">
+						<div class="webinar-modal_item-title">Вебинар по продажам</div>
+						<div class="webinar-modal_item-text">в 12:00<br>
+							Ждем вас в zoom! С собой тетрадки и ручки!</div>	
+					</div>													
+					<svg class="icon"><use xlink:href="images/sprite.svg#arrow6"></use></svg>
+				</a>									
+			</div>	
+		</section>
+
+
+
+		<section class="modal-calendar" id="calendar_modal-mob4">			
+			<div class="calendar-modal_title">15 мая 2022</div>											
+			<div class="webinar-modal_items">
+				<a href="#" class="webinar-modal_item gray">
+					<div class="webinar-modal_item-box">
+						<div class="webinar-modal_item-title">Вебинар по продажам</div>
+						<div class="webinar-modal_item-text">в 12:00</div>	
+					</div>													
+				</a>	
+				<a href="#" class="webinar-modal_item gray">
+					<div class="webinar-modal_item-box">
+						<div class="webinar-modal_item-title">Вебинар по продажам</div>
+						<div class="webinar-modal_item-text">в 12:00</div>	
+					</div>													
+				</a>	
+				<a href="#" class="webinar-modal_item gray">
+					<div class="webinar-modal_item-box">
+						<div class="webinar-modal_item-title">Вебинар по продажам</div>
+						<div class="webinar-modal_item-text">в 12:00</div>	
+					</div>													
+				</a>	
+				<a href="#" class="webinar-modal_item gray">
+					<div class="webinar-modal_item-box">
+						<div class="webinar-modal_item-title">Вебинар по продажам</div>
+						<div class="webinar-modal_item-text">в 12:00</div>	
+					</div>													
+				</a>				
+			</div>	
+		</section>
+
+
+		<section class="modal-calendar" id="calendar_modal-mob5">			
+			<div class="calendar-modal_title">15 мая 2022</div>											
+			<div class="webinar-modal_items">
+				<a href="#" class="webinar-modal_item gray">
+					<div class="webinar-modal_item-box">
+						<div class="webinar-modal_item-title">Вебинар по продажам</div>
+						<div class="webinar-modal_item-text">в 12:00<br>
+							Ждем вас в zoom! С собой тетрадки и ручки!</div>		
+					</div>													
+				</a>	
+				<a href="#" class="webinar-modal_item gray">
+					<div class="webinar-modal_item-box">
+						<div class="webinar-modal_item-title">Как полюбить работу</div>
+						<div class="webinar-modal_item-text">в 15:00<br>
+							Ждем вас в zoom! С собой тетрадки и ручки!</div>		
+					</div>													
+				</a>				
+			</div>	
+		</section>
+
+
+		<section class="modal-calendar" id="calendar_modal-mob6">			
+			<div class="calendar-modal_title">15 мая 2022</div>											
+			<div class="webinar-modal_items">
+				<a href="#" class="webinar-modal_item gray">
+					<div class="webinar-modal_item-box">
+						<div class="webinar-modal_item-title">Вебинар по продажам</div>
+						<div class="webinar-modal_item-text">в 12:00<br>
+							Ждем вас в zoom! С собой тетрадки и ручки!</div>		
+					</div>													
+				</a>					
+			</div>	
+		</section>
+
+
+		<section class="modal modal-video" id="video_modal">
+			<div class="modal-video_title">Как пользоваться модулем</div>
+			<video class="video-player video_new" controlsList="nodownload" controls crossorigin="anonymous">
+			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4" type="video/mp4">
+			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.webm" type="video/webm">
+			    <track src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" label="English subtitles" kind="captions" srclang="en" default></track>
+			</video>
+			<a href="#" class="modal-video_link">
+				<span>Далее</span>				
+			</a>
+		</section>
+
+
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="js/media-player.js"></script>
+		<script src="js/html5sortable.min.js"></script>
+		<script src="js/wavesurfer.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+		<script src="https://unpkg.com/@popperjs/core@2"></script>
+		<script src="https://unpkg.com/tippy.js@6"></script>
+
+		
+	</body>
+</html>

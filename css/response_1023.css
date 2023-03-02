@@ -341,7 +341,71 @@
     }
 
 
+    .rating-block_items > * {
+        width: calc(100%/3 - 13px);
+    }
 
+
+
+
+    
+    /* webinar3.html */
+    .calendar_item-day {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+
+
+    /* inclusion.html */
+    .inclusion_items > * {
+        width: calc(100%/3 - 15px);
+    }
+    
+
+    /* training-course */
+    .training-course_items {
+        margin-left: -25px;
+        margin-bottom: -40px;
+    }
+    .training-course_items > * {
+        width: calc(100%/3 - 25px);
+        margin-left: 25px;
+        margin-bottom: 40px;
+    }
+    .training-course_item-info {
+        top: calc(100% + 20px);
+        left: 0;
+    }
+    .training-course .page_title {
+        margin-bottom: 45px;
+    }
+
+
+    .correction-btn:hover .correction-btn_text {
+        display: none;    
+    }
+
+    /* .wrapper_head_courses .select-right{
+        display: none;
+    } */
+
+    .remarks_item{
+        height: auto;
+    }
+
+
+    .col_main .title {
+        font-size: 19px;
+        margin-bottom: 20px;
+    }
+    .task_items > * {
+        width: calc(100%/3 - 16px);
+    }
+
+    .task2 .task_items > * {
+        width: calc(100%/3 - 16px);
+    }
 
 
 

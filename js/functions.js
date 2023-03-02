@@ -25,7 +25,9 @@ $(() => {
 
 	// Fancybox
 	Fancybox.defaults.autoFocus = false
+	Fancybox.defaults.trapFocus = false
 	Fancybox.defaults.dragToClose = false
+	Fancybox.defaults.placeFocusBack = false
 	Fancybox.defaults.l10n = {
 		CLOSE: "Закрыть",
 		NEXT: "Следующий",
@@ -47,18 +49,17 @@ $(() => {
 			src: $(this).data('content'),
 			type: 'inline'
 		}],
-		{
-	    on: {
-		    closing: (fancybox, slide) => {
-		      	if(fancybox.items[0].src=="#video_modal")	    
-		      	{
-		      		video = document.querySelector(".video_new");
-					video.pause();
-					video.currentTime = 0;
-		      	}		        
-		    },
-	    },
-	  })
+			{
+				on: {
+					closing: (fancybox, slide) => {
+						if (fancybox.items[0].src == "#video_modal") {
+							video = document.querySelector(".video_new");
+							video.pause();
+							video.currentTime = 0;
+						}
+					},
+				},
+			})
 	})
 
 	$('body').on('click', '.modal .close_btn', function (e) {
@@ -66,6 +67,24 @@ $(() => {
 
 		Fancybox.close()
 	})
+
+
+	// выбрать все checkbox`ы
+	$(".choose-link").click(function (e) {
+		e.preventDefault()
+		var t = $(this).parents('.form_item');
+		t.find('input[type=checkbox]').each(function() {
+		  this.checked = true; 
+		});
+	  }); 
+	  // отменить все checkbox`ы	
+	  $(".remove-link").click(function (e) {
+		e.preventDefault()
+		var t = $(this).parents('.form_item');
+		t.find('input[type=checkbox]').each(function() { 
+		  this.checked = false; 
+		}); 
+	  });
 
 
 	// Мини всплывающие окна
@@ -99,6 +118,11 @@ $(() => {
 		}
 	})
 
+	$('.webinar-modal_head button').click(function (e) {
+		e.preventDefault()
+		$('.mini_modal').removeClass('active')
+		$('.mini_modal_btn').removeClass('active')
+	})
 
 	// Моб. версия
 	fiestResize = false
@@ -113,7 +137,7 @@ $(() => {
 
 
 // Вспомогательные функции
-const setHeight = (className) => {	
+const setHeight = (className) => {
 	let maxheight = 0
 
 	className.each(function () {
@@ -126,7 +150,7 @@ const setHeight = (className) => {
 }
 
 // Вспомогательные функции
-const setHeight2 = (className) => {	
+const setHeight2 = (className) => {
 	const elHeight = className.prev().outerHeight()
 	className.outerHeight(elHeight)
 }

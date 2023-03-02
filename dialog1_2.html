@@ -319,6 +319,10 @@
 										</div>
 
 										<div class="what_do modal_cont">
+											<button class="btn modal_btn" data-content="#correction_modal">
+												<svg class="icon"><use xlink:href="images/sprite.svg#correct"></use></svg>
+												<span>Исправить</span>
+											</button>
 											<button class="btn mini_modal_btn" data-modal-id="#what_do_modal">Что делать?</button>
 
 											<div class="mini_modal" id="what_do_modal">
@@ -327,6 +331,9 @@
 										</div>
 									</div>
 
+									<div class="dialog_before">
+										Вы продолжаете ранее запущенный диалог
+									</div>
 
 									<div class="messages">
 										<div class="message animate__animated animate__fadeInUp">
@@ -339,67 +346,48 @@
 
 												<div class="text_message">Прослушайте аудиосообщение и запишите свой ответ</div>
 											</div>
-										</div>
-
-										<div class="message animate__animated animate__fadeInUp animate__delay-1s">
-											<div class="photo">
-												<img data-src="images/tmp/person_photo.jpg" alt="" class="lozad">
-											</div>
-
-											<div class="info">
-												<div class="name">Василий Иванович</div>
-
-												<div class="audio_message">
-													<div class="audio_media">											
-														<audio
-													        controls
-													        src="images/t-rex-roar.mp3">
-													            Your browser does not support the
-													            <code>audio</code> element.
-													    </audio>
-													</div>
+											<!-- <div class="correction-btn">
+												<button class="btn modal_btn" data-content="#correction_modal"><img src="images/correction_btn.svg" alt=""></button>
+												<div class="correction-btn_text">
+													Нажмите данную кнопку для предложения исправления вопроса
 												</div>
-											</div>
-										</div>
-
-										<div class="message animate__animated animate__fadeInUp animate__delay-2s">
-											<div class="photo">
-												<img data-src="images/tmp/person_photo.jpg" alt="" class="lozad">
-											</div>
-
-											<div class="info">
-												<div class="name">Василий Иванович</div>
-
-												<div class="text_message">Хотите увидеть подсказку?</div>
-											</div>
-
+											</div> -->
 											<div class="prompt">
 												<div class="btns">
-													<button class="yes_btn">
-														<span>Показать подсказку</span>
-														<span>Скрыть подсказку</span>
-													</button>
-
-													<button class="no_btn">Нет, спасибо</button>
+													<div class="btns_block">
+														<button class="yes_btn">
+															<span>Показать подсказку</span>
+															<span>Скрыть подсказку</span>														
+														</button>
+														<button class="yes_btn">
+															<span>Совет эксперта</span>
+														</button>
+														<!-- <div class="date_message">04 декабря в 20:43</div> -->
+													</div>													
+													<div class="prompt-box">
+														<div class="text">
+															<div class="text-information">
+																<div class="name">Подсказка</div>
+																<div class="info-hint">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов</div>	
+															</div>
+															<div class="likes">
+																<button class="like">
+																	<svg class="icon"><use xlink:href="images/sprite.svg#like"></use></svg>
+																</button>
+																<button class="dislike modal_btn" data-content="#correction_modal5">
+																	<svg class="icon"><use xlink:href="images/sprite.svg#dislike"></use></svg>
+																</button>
+															</div>																
+														</div>
+													</div>
+													
 												</div>
-
-												<div class="text">Пирожок ... сделан из ... и стоит 85 ...</div>
 											</div>
 										</div>
+									</div>
 
-										<div class="message answer  animate__animated animate__fadeInUp animate__delay-3s">
-											<div class="info">
-												<div class="name">Вы</div>
-
-												<div class="text_message">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.</div>
-											</div>
-
-											<div class="photo">
-												<img data-src="images/tmp/person_photo2.jpg" alt="" class="lozad">
-											</div>
-										</div>
-
-										<div class="message  animate__animated animate__fadeInUp animate__delay-4s">
+									<div class="messages">
+										<div class="message animate__animated animate__fadeInUp">
 											<div class="photo">
 												<img data-src="images/tmp/person_photo.jpg" alt="" class="lozad">
 											</div>
@@ -407,17 +395,72 @@
 											<div class="info">
 												<div class="name">Василий Иванович</div>
 
-												<div class="text_message">Спасибо! Ваш ответ принят! Можете перейти к следующему вопросу</div>
+												<div class="text_message">Прослушайте аудиосообщение и запишите свой ответ</div>
+											</div>
+											<!-- <div class="correction-btn">
+												<button class="btn modal_btn" data-content="#correction_modal"><img src="images/correction_btn.svg" alt=""></button>
+												<div class="correction-btn_text">
+													Нажмите данную кнопку для предложения исправления вопроса
+												</div>
+											</div> -->
+											<div class="prompt">
+												<div class="btns">
+													<div class="btns_block">
+														<button class="yes_btn">
+															<span>Показать подсказку</span>
+															<span>Скрыть подсказку</span>														
+														</button>
+														<div class="date_message">04 декабря в 20:43</div>
+													</div>													
+													<div class="prompt-box">
+														<div class="text">
+															<div class="text-information">
+																<div class="name">Подсказка</div>
+																<div class="info-hint">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов</div>	
+															</div>
+															<div class="likes">
+																<button class="like">
+																	<svg class="icon"><use xlink:href="images/sprite.svg#like"></use></svg>
+																</button>
+																<button class="dislike modal_btn" data-content="#correction_modal5">
+																	<svg class="icon"><use xlink:href="images/sprite.svg#dislike"></use></svg>
+																</button>
+															</div>																
+														</div>
+													</div>
+													
+												</div>
 											</div>
 										</div>
 									</div>
 
 
-									<div class="next_link">
-										<a href="/">
-											<svg class="icon"><use xlink:href="images/sprite.svg#ic_next_arrow"></use></svg>
-										</a>
+									<div class="add_audio audio-record">
+										<input type="checkbox" id="audio_record-icon" name="">
+										<label for="audio_record-icon" class="start_btn">
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_mic"></use></svg>
+										</label>
+
+										<div class="exp">Нажмите и отпустите, чтобы начать запись</div>
+
+										<div class="time">0:01</div>
+
+										<div class="limit_time">Внимание! Ваш ответ должен быть менее 60 сек.</div>
 									</div>
+
+									<div class="add_audio audio-record">
+										<input type="checkbox" id="audio_record-icon" name="">
+										<label for="audio_record-icon " class="start_btn loading">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><g opacity="0.5"><path d="M9.9 18.5c-4.7 0-8.6-3.8-8.6-8.6 0-4.7 3.8-8.6 8.6-8.6 4.7 0 8.6 3.8 8.6 8.6C18.5 14.7 14.7 18.5 9.9 18.5zM9.9 3.9c-3.3 0-6 2.7-6 6 0 3.3 2.7 6 6 6 3.3 0 6-2.7 6-6C15.9 6.6 13.2 3.9 9.9 3.9z" fill="currentColor"/></g><path d="M3.1 10.4H0.5c0-5.4 4.4-9.9 9.9-9.9v2.6C6.3 3.1 3.1 6.3 3.1 10.4z" fill="currentColor" /></svg>
+										</label>
+
+										<div class="exp">Нажмите и отпустите, чтобы начать запись</div>
+
+										<div class="time">0:01</div>
+
+										<div class="limit_time">Внимание! Ваш ответ должен быть менее 60 сек.</div>
+									</div>
+
 								</section>
 							</section>
 
@@ -461,6 +504,110 @@
 		<div class="supports_error">
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
 		</div>
+
+
+		<section class="correction_modal" id="correction_modal">			
+			<div class="correction_modal-title">Предложить исправление</div>											
+			<div class="correction_modal-text">Вы хотите оставить предложение или комментарий:</div>
+			<form class="correction_modal-form">
+				<div class="line">
+					<div class="field">
+						<input id="radio-1" type="radio" name="radio">
+                    	<label for="radio-1">К вопросу тренажера</label>
+					</div>
+				</div>	
+				<div class="line">
+					<div class="field">
+						<input id="radio-2" type="radio" name="radio">
+                    	<label for="radio-2">Ко всему тренажеру</label>
+					</div>
+				</div>	
+				<div class="correction_modal-btns">
+					<a href="#" class="correction_modal-form-btn active">
+						<span>Предложить</span>					
+					</a>			
+				</div>							
+			</form>
+		</section>
+
+
+		<section class="correction_modal" id="correction_modal2">			
+			<div class="correction_modal-title">Предложить исправление</div>											
+			<div class="correction_modal-text">Ваше исправление</div>
+			<form class="correction_modal-form">
+				<div class="line">
+					<div class="field">
+						<textarea></textarea>
+					</div>
+				</div>					
+				<div class="correction_modal-btns">
+					<a href="#" class="correction_modal-form-btn gray">
+						<span>Назад</span>					
+					</a>	
+					<a href="#" class="correction_modal-form-btn">
+						<span>Предложить</span>					
+					</a>							
+				</div>					
+			</form>
+		</section>
+
+
+		<section class="correction_modal" id="correction_modal3">			
+			<div class="correction_modal-title">Предложить исправление</div>											
+			<form class="correction_modal-form">
+				<div class="correction_modal-text">Вопрос</div>
+				<div class="line">
+					<div class="field">
+						<textarea></textarea>
+					</div>
+				</div>		
+				<div class="correction_modal-text">Подсказка</div>
+				<div class="line">
+					<div class="field">
+						<textarea></textarea>
+					</div>
+				</div>				
+				<div class="correction_modal-btns">
+					<a href="#" class="correction_modal-form-btn gray">
+						<span>Назад</span>					
+					</a>	
+					<a href="#" class="correction_modal-form-btn">
+						<span>Предложить</span>					
+					</a>							
+				</div>					
+			</form>
+		</section>
+
+
+		<section class="correction_modal" id="correction_modal4">			
+			<div class="correction_modal-icon">
+				<img src="images/correction_modal_icon.svg" alt="">
+			</div>
+			<div class="correction_modal-title">Спасибо за комментарий!</div>
+			<div class="correction_modal-btns">				
+				<a href="#" class="correction_modal-form-btn">
+					<span>Закрыть</span>					
+				</a>							
+			</div>
+		</section>
+
+
+		<section class="correction_modal" id="correction_modal5">			
+			<div class="correction_modal-title">Что вам не понравилось?</div>											
+			<div class="correction_modal-text">Причина</div>
+			<form class="correction_modal-form">
+				<div class="line">
+					<div class="field">
+						<textarea placeholder="Ведите причину"></textarea>
+					</div>
+				</div>	
+				<div class="correction_modal-btns">
+					<a href="#" class="correction_modal-form-btn active">
+						<span>Отправить</span>					
+					</a>			
+				</div>							
+			</form>
+		</section>
 
 
 		<!-- Подключение javascript файлов -->

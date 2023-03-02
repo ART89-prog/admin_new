@@ -28,6 +28,7 @@
 
 		<!-- Подключение файлов стилей -->
 		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/circle.css" async>
 		<link rel="stylesheet" href="css/styles.css" async>
 
 		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
@@ -304,7 +305,54 @@
 
 
 						<section class="content">
-							<h1 class="page_title">Важные советы</h1>						
+							<h1 class="page_title">Важные советы</h1>
+
+							<section class="analytics-enabled">
+								<div class="analytics-enabled_item">
+									<div class="analytics-enabled_left">
+										<div class="analytics-enabled_icon">
+											<img src="images/analytics-disabled.svg" alt="">
+										</div>	
+										<div class="analytics-enabled_info">
+											<div class="analytics-enabled_title">Аналитика отключена</div>
+											<div class="analytics-enabled_text">Аналитика отключена для вашего аккаунта. Вы можете ее включить самостоятельно</div>
+										</div>
+									</div>									
+								</div>
+							</section>
+
+							<section class="analytics-enabled">
+								<div class="analytics-enabled_item">
+									<div class="analytics-enabled_left">
+										<div class="analytics-enabled_icon">
+											<img src="images/analytics-enabled.svg" alt="">
+										</div>	
+										<div class="analytics-enabled_info">
+											<div class="analytics-enabled_title">Здесь появится ваша аналитика</div>
+											<div class="analytics-enabled_text">Аналитика в процессе создания. Обычно она создается не более 2-х минут. Пожалуйста, подождите.</div>
+											<div class=""><a href="" class="update_page">Обновить страницу</a></div>
+										</div>
+									</div>
+									<div class="analytics-enabled_time">01:43</div>
+								</div>
+							</section>
+
+							<section class="analytics-enabled">
+								<div class="analytics-enabled_item">
+									<div class="analytics-enabled_left">
+										<div class="advice_item-icon analytics-enabled_icon">
+											<img src="images/advice3.svg" alt="">
+										</div>	
+										<div class="analytics-enabled_info">
+											<div class="analytics-enabled_title">Здесь появится ваша аналитика</div>
+											<div class="analytics-enabled_text">Аналитика в процессе создания. Обычно она создается не более 2-х минут. Пожалуйста, подождите.</div>
+											<div class=""><a href="" class="update_page">Обновить страницу</a></div>
+										</div>
+									</div>
+									<div class="analytics-enabled_time">01:43</div>
+								</div>
+							</section>
+						
 
 							<section class="advice">
 								<div class="advice_items">
@@ -374,6 +422,53 @@
 								</div>
 							</section>
 
+
+							<h1 class="page_title">Самые частые ошибки</h1>
+
+							<section class="mistake">
+								<div class="mistake_items">
+									<div class="mistake_item yellow">
+										<div class="c100 p65">
+											<span>65</span>
+											<div class="slice">
+												<div class="bar"></div>
+												<div class="fill"></div>
+											</div>
+										</div>
+										<div class="mistake_item-info">
+											<div class="mistake_item_title">Имя</div>
+											<div class="mistake_item-text">Забываете обращаться по<br> имени с частотой 65%</div>
+										</div>
+									</div>
+									<div class="mistake_item red">
+										<div class="c100 p91">
+											<span>91</span>
+											<div class="slice">
+												<div class="bar"></div>
+												<div class="fill"></div>
+											</div>
+										</div>
+										<div class="mistake_item-info">
+											<div class="mistake_item_title">Вопрос</div>
+											<div class="mistake_item-text">Не задаете вопросы с частотой 91%</div>
+										</div>
+									</div>
+									<div class="mistake_item green">
+										<div class="c100 p43">
+											<span>43</span>
+											<div class="slice">
+												<div class="bar"></div>
+												<div class="fill"></div>
+											</div>
+										</div>
+										<div class="mistake_item-info">
+											<div class="mistake_item_title">Тихий голос</div>
+											<div class="mistake_item-text">Тихо говорите с частотой 43%</div>
+										</div>
+									</div>
+								</div>
+							</section>
+
 							<h1 class="page_title">Детализация</h1>
 
 
@@ -386,7 +481,7 @@
 												<div class="details_item-text">Приветствие</div>	
 											</div>
 											<div class="details_item-right">
-												<a href="#" class="details_item-link">
+												<a href="#" class="details_item-link-yellow active">
 													<span>Подробнее</span> 
 													<svg class="icon"><use xlink:href="images/sprite.svg#link-more"></use></svg>
 												</a>
@@ -395,6 +490,118 @@
 													<span>9 замечаний</span>
 												</div>
 											</div>
+										</div>
+										<div class="details_item-body" style="display: none;">
+											<div class="details_item-dialog">
+												<div class="details_item-body-title">Диалог</div>
+												<div class="dialog_items">
+													<div class="dialog_item">
+														<div class="dialog_item-avatar">
+															<img src="images/avatar1.png " alt="">
+														</div>
+														<div class="dialog_item-info">
+															<div class="dialog_item-author">Тренажер Тренажерович</div>
+															<div class="dialog_item-text">Как давно ваша компания находится на рынке?</div>
+														</div>
+													</div>
+													<div class="dialog_item">
+														<div class="dialog_item-avatar">
+															<img src="images/avatar2.png " alt="">
+														</div>
+														<div class="dialog_item-info">
+															<div class="dialog_item-author">Вы</div>
+															<div class="dialog_item-text">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок?</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="details_item-dialog details_item-answer">
+												<div class="details_item-body-title">Последний ответ эксперта</div>
+												<div class="dialog_item">
+													<div class="dialog_item-avatar">
+														<img src="images/avatar3.png " alt="">
+													</div>
+													<div class="dialog_item-info">
+														<div class="dialog_item-author">Мария Сергеева</div>
+														<div class="dialog_item-text">Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит текст</div>
+													</div>
+												</div>
+												<a href="#" class="details_item-dialog-link" data-content="#callback_modal">
+													<span>Другие ответы экспертов</span>
+												</a>
+											</div>
+
+											<div class="details_item-body-title mt_20">Замечания</div>
+
+											<div class="details_item-remarks">
+												<div class="details_item_title">Аудио и видео</div>
+												<div class="remarks_items">
+													<div class="remarks_item remarks_item-red">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-no"></use></svg>
+														<span>Вы говорите слишком медленно</span>
+													</div>
+													<div class="remarks_item remarks_item-yellow">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-no2"></use></svg>
+														<span>Вы говорите слишком медленно 2</span>
+													</div>
+													<div class="remarks_item remarks_item-green">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-yes"></use></svg>
+														<span>С составлением предложений у вас все отлично. Вы молодец!</span>
+														<a href="#" class="modal_content" data-content="#answer">
+															<svg class="icon"><use xlink:href="images/sprite.svg#glaz"></use></svg>
+														</a>
+													</div>
+												</div>
+											</div>
+
+											<div class="details_item-remarks">
+												<div class="details_item_title">Аудио и видео</div>
+												<div class="remarks_items">
+													<div class="remarks_item remarks_item-red">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-no"></use></svg>
+														<span>Вы говорите слишком медленно</span>
+													</div>
+													<div class="remarks_item remarks_item-yellow">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-no2"></use></svg>
+														<span>Вы говорите слишком медленно 2</span>
+													</div>
+													<div class="remarks_item remarks_item-green">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-yes"></use></svg>
+														<span>С составлением предложений у вас все отлично. Вы молодец!</span>
+														<a href="#" class="modal_content" data-content="#answer">
+															<svg class="icon"><use xlink:href="images/sprite.svg#glaz"></use></svg>
+														</a>
+													</div>
+												</div>
+											</div>
+
+											<div class="details_item-remarks">
+												<div class="details_item_title">Аудио и видео</div>
+												<div class="remarks_items">
+													<div class="remarks_item remarks_item-red">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-no"></use></svg>
+														<span>Вы говорите слишком медленно</span>
+													</div>
+													<div class="remarks_item remarks_item-yellow">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-no2"></use></svg>
+														<span>Вы говорите слишком медленно 2</span>
+													</div>
+													<div class="remarks_item remarks_item-green">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-yes"></use></svg>
+														<span>С составлением предложений у вас все отлично. Вы молодец!</span>
+														<a href="#" class="modal_content" data-content="#answer">
+															<svg class="icon"><use xlink:href="images/sprite.svg#glaz"></use></svg>
+														</a>
+													</div>
+												</div>
+											</div>
+
+											<a href="#" class="details_item-link-yellow mt">
+												<span>Свернуть</span> 
+												<svg class="icon"><use xlink:href="images/sprite.svg#turn"></use></svg>
+											</a>
+
 										</div>
 									</div>
 
@@ -405,7 +612,7 @@
 												<div class="details_item-text">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок?</div>	
 											</div>
 											<div class="details_item-right">
-												<a href="#" class="details_item-link">
+												<a href="#" class="details_item-link-yellow active">
 													<span>Подробнее</span> 
 													<svg class="icon"><use xlink:href="images/sprite.svg#link-more"></use></svg>
 												</a>
@@ -414,6 +621,70 @@
 													<span>замечаний нет</span>
 												</div>
 											</div>
+										</div>
+										<div class="details_item-body"  style="display: none;">
+											<div class="details_item-dialog">
+												<div class="details_item-body-title">Диалог</div>
+												<div class="dialog_items">
+													<div class="dialog_item">
+														<div class="dialog_item-avatar">
+															<img src="images/avatar1.png " alt="">
+														</div>
+														<div class="dialog_item-info">
+															<div class="dialog_item-author">Тренажер Тренажерович</div>
+															<div class="dialog_item-text">Как давно ваша компания находится на рынке?</div>
+														</div>
+													</div>
+													<div class="dialog_item">
+														<div class="dialog_item-avatar">
+															<img src="images/avatar2.png " alt="">
+														</div>
+														<div class="dialog_item-info">
+															<div class="dialog_item-author">Вы</div>
+															<div class="dialog_item-text">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок?</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="details_item-dialog details_item-answer">
+												<div class="details_item-body-title">Последний ответ эксперта</div>
+												<div class="dialog_item">
+													<div class="dialog_item-avatar">
+														<img src="images/avatar3.png " alt="">
+													</div>
+													<div class="dialog_item-info">
+														<div class="dialog_item-author">Мария Сергеева</div>
+														<div class="dialog_item-text">Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит текст</div>
+													</div>
+												</div>
+												<a href="#" class="details_item-dialog-link" data-content="#callback_modal">
+													<span>Другие ответы экспертов</span>
+												</a>
+											</div>
+
+											<div class="details_item-remarks">
+												<div class="remarks_items">
+													<div class="remarks_item remarks_item-red">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-no"></use></svg>
+														<span>Вы говорите слишком медленно</span>
+													</div>
+													<div class="remarks_item remarks_item-yellow">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-no2"></use></svg>
+														<span>Вы говорите слишком медленно 2</span>
+													</div>
+													<div class="remarks_item remarks_item-green">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-yes"></use></svg>
+														<span>С составлением предложений у вас все отлично. Вы молодец!</span>
+													</div>
+												</div>
+											</div>
+
+											<a href="#" class="details_item-link-yellow mt">
+												<span>Свернуть</span> 
+												<svg class="icon"><use xlink:href="images/sprite.svg#turn"></use></svg>
+											</a>
+
 										</div>
 									</div>
 
@@ -470,6 +741,9 @@
 														<div class="dialog_item-text">Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит текст</div>
 													</div>
 												</div>
+												<a href="#" class="details_item-dialog-link" data-content="#callback_modal">
+													<span>Другие ответы экспертов</span>
+												</a>
 											</div>
 
 											<div class="details_item-remarks">
@@ -477,6 +751,10 @@
 													<div class="remarks_item remarks_item-red">
 														<svg class="icon"><use xlink:href="images/sprite.svg#remark-no"></use></svg>
 														<span>Вы говорите слишком медленно</span>
+													</div>
+													<div class="remarks_item remarks_item-yellow">
+														<svg class="icon"><use xlink:href="images/sprite.svg#remark-no2"></use></svg>
+														<span>Вы говорите слишком медленно 2</span>
 													</div>
 													<div class="remarks_item remarks_item-green">
 														<svg class="icon"><use xlink:href="images/sprite.svg#remark-yes"></use></svg>
@@ -849,6 +1127,65 @@
 			    <track src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" label="English subtitles" kind="captions" srclang="en" default></track>
 			</video>
 		</section>
+
+
+
+		<section class="details-modal" id="callback_modal">
+			<div class="details-modal_title">Ответы других экспертов</div>
+			<div class="dialog_items">
+				<div class="dialog_item">
+					<div class="dialog_item-avatar">
+						<img src="images/avatar3.png " alt="">
+					</div>
+					<div class="dialog_item-info">
+						<div class="dialog_item-author">Мария Сергеева</div>
+						<div class="dialog_item-text">Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит текст</div>
+					</div>
+				</div>
+				<div class="dialog_item">
+					<div class="dialog_item-avatar">
+						<img src="images/avatar3.png " alt="">
+					</div>
+					<div class="dialog_item-info">
+						<div class="dialog_item-author">Мария Сергеева</div>
+						<div class="dialog_item-text">Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит текст</div>
+					</div>
+				</div>
+				<div class="dialog_item">
+					<div class="dialog_item-avatar">
+						<img src="images/avatar3.png " alt="">
+					</div>
+					<div class="dialog_item-info">
+						<div class="dialog_item-author">Мария Сергеева</div>
+						<div class="dialog_item-text">Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит текст</div>
+					</div>
+				</div>
+				<div class="dialog_item">
+					<div class="dialog_item-avatar">
+						<img src="images/avatar3.png " alt="">
+					</div>
+					<div class="dialog_item-info">
+						<div class="dialog_item-author">Мария Сергеева</div>
+						<div class="dialog_item-text">Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит текст</div>
+					</div>
+				</div>	
+			</div>			
+		</section>
+
+		<section class="details-modal" id="answer">
+			<div class="details-modal_title">Правильный ответ</div>
+			<div class="dialog_items">
+				<div class="dialog_item">
+					<div class="dialog_item-info">
+						<div class="dialog_item-author">Мария Сергеева</div>
+						<div class="dialog_item-text">Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит текст</div>
+					</div>
+				</div>
+			</div>			
+		</section>
+
+
+
 
 
 		<div class="supports_error">

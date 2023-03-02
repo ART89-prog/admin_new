@@ -27,6 +27,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
 		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 		<link rel="stylesheet" href="css/fancybox.css" async>
 		<link rel="stylesheet" href="css/styles.css" async>
 
@@ -299,6 +300,20 @@
 
 
 						<section class="content">
+
+							<section class="slider">
+								<div class="swiper">
+								    <div class="swiper-wrapper">
+									    <div class="swiper-slide"><a href=""><img src="https://illustrators.ru/uploads/product/image/10097/Untitled-1-01.png" alt=""></a></div>	
+									    <div class="swiper-slide"><img src="https://illustrators.ru/uploads/product/image/10097/Untitled-1-01.png" alt=""></div>					 
+								    </div>
+								    <div class="swiper-pagination"></div>
+
+								    <div class="swiper-button-prev"></div>
+								    <div class="swiper-button-next"></div>
+								</div>
+							</section>
+
 							<section class="welcome">
 								<div class="avatar">
 									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user2"></use></svg>
@@ -397,83 +412,102 @@
 									</div>
 								</div>
 
-								<div class="row">
-									<div class="course">
-										<div class="stickers">
-											<div class="sticker blue">новый</div>
-											<div class="sticker red">обязательный</div>
-										</div>
-
+								<div class="trainer_items">
+									<div class="trainer_item">
 										<a href="/" class="thumb">
-											<img data-src="images/tmp/course_thumb1.jpg" alt="" class="lozad">
+											<div class="trainer_item-stickers">
+												<svg class="icon"><use xlink:href="images/sprite.svg#click"></use></svg>
+											</div>
+											<img data-src="images/trainer1.jpg" alt="" class="lozad">
 										</a>
-
-										<div class="info">
-											<div class="name">
-												<a href="/">Продажи сайтов</a>
+	
+										<div class="trainer_item-info">
+											<div class="trainer_item-name">
+												<a href="#">Станок ШПШ форматор-вулканизатор 75 дюймов</a>
 											</div>
-
-											<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
-
-											<div class="progress">
-												<div class="line" style="width: 0%;"></div>
-												<div class="val">0%</div>
+											<div class="trainer_item-desc">Симулятор послойной сборки | 43 этапа</div>
+											<div class="trainer_item-status red">Запуск: Никогда</div>
+										</div>									
+										<div class="trainer_item-links">
+											<div class="trainer_item-link-left">
+												<a href="#">
+													<svg class="icon"><use xlink:href="images/sprite.svg#play3"></use></svg>
+												</a>
+												<a href="#">
+													<svg class="icon"><use xlink:href="images/sprite.svg#update"></use></svg>
+												</a>	
 											</div>
-
-											<div class="stats">Уроков: 2, тестов: 2, заданий: 3</div>
-										</div>
+											<button class="trainer_item-btn">
+												<span>История</span> 
+											</button>
+										</div>									
+									</div>
+	
+									<div class="trainer_item">
+										<a href="/" class="thumb">
+											<div class="trainer_item-stickers">
+												<svg class="icon"><use xlink:href="images/sprite.svg#click"></use></svg>
+											</div>
+											<img data-src="images/trainer2.jpg" alt="" class="lozad">
+										</a>
+	
+										<div class="trainer_item-info">
+											<div class="trainer_item-name">
+												<a href="#">Станок ШПШ форматор-вулканизатор 75 дюймов</a>
+											</div>
+											<div class="trainer_item-desc">Симулятор послойной сборки | 43 этапа</div>
+											<div class="trainer_item-status blue">Запуск: 5 дней назад</div>
+										</div>									
+										<div class="trainer_item-links">
+											<div class="trainer_item-link-left">
+												<a href="#">
+													<svg class="icon"><use xlink:href="images/sprite.svg#play3"></use></svg>
+												</a>
+												<a href="#">
+													<svg class="icon"><use xlink:href="images/sprite.svg#update"></use></svg>
+												</a>	
+											</div>
+											<button class="trainer_item-btn">
+												<span>История</span> 
+											</button>
+										</div>									
+									</div>
+	
+									<div class="trainer_item">
+										<a href="/" class="thumb">
+											<div class="trainer_item-stickers">
+												<svg class="icon"><use xlink:href="images/sprite.svg#click"></use></svg>
+											</div>
+											<img data-src="images/trainer3.jpg" alt="" class="lozad">
+										</a>
+	
+										<div class="trainer_item-info">
+											<div class="trainer_item-name">
+												<a href="#">Станок ШПШ форматор-вулканизатор 75 дюймов</a>
+											</div>
+											<div class="trainer_item-desc">Симулятор послойной сборки | 43 этапа</div>
+											<div class="trainer_item-status blue">Запуск: Очень давно</div>
+										</div>									
+										<div class="trainer_item-links">
+											<div class="trainer_item-link-left">
+												<a href="#">
+													<svg class="icon"><use xlink:href="images/sprite.svg#play3"></use></svg>
+												</a>
+												<a href="#">
+													<svg class="icon"><use xlink:href="images/sprite.svg#update"></use></svg>
+												</a>	
+											</div>
+											<button class="trainer_item-btn">
+												<span>История</span> 
+											</button>
+										</div>									
 									</div>
 
-									<div class="course">
-										<div class="stickers">
-											<div class="sticker red">обязательный</div>
-										</div>
-
-										<a href="/" class="thumb">
-											<img data-src="images/tmp/course_thumb2.jpg" alt="" class="lozad">
+									<div class="trainer_item webinar_more">
+										<a href="/">
+											<span><svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg></span>
+											Показать еще 37
 										</a>
-
-										<div class="info">
-											<div class="name">
-												<a href="/">Узнай свой психотип</a>
-											</div>
-
-											<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
-
-											<div class="progress">
-												<div class="line" style="width: 10%;">
-													<div class="val">10%</div>
-												</div>
-											</div>
-
-											<div class="stats">Уроков: 2, тестов: 2, заданий: 3</div>
-										</div>
-									</div>
-
-									<div class="course">
-										<div class="stickers">
-											<div class="sticker red">обязательный</div>
-										</div>
-
-										<a href="/" class="thumb">
-											<img data-src="images/tmp/course_thumb3.jpg" alt="" class="lozad">
-										</a>
-
-										<div class="info">
-											<div class="name">
-												<a href="/">Передержка кошек, а также других питомцев на даче!</a>
-											</div>
-
-											<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
-
-											<div class="progress">
-												<div class="line" style="width: 70%;">
-													<div class="val">70%</div>
-												</div>
-											</div>
-
-											<div class="stats">Уроков: 2, тестов: 2, заданий: 3</div>
-										</div>
 									</div>
 								</div>
 							</section>
@@ -498,71 +532,96 @@
 									</div>
 								</div>
 
-								<div class="row">
-									<div class="simulator">
-										<div class="format orange">аудио формат</div>
+								<section class="simulators-new">
+									<div class="simulator_items">
 
-										<div class="name">
-											<a href="/">Продажи сайтов</a>
+										<div class="simulator_item">
+											<div class="simulator_item-left">
+												<div class="simulator_item-photo">
+													<img src="images/simulator_item.png" alt="">
+													<svg class="icon"><use xlink:href="images/sprite.svg#bell"></use></svg>
+												</div>
+												<div class="simulator_item-name">Василий Петрович</div>
+												<div class="simulator_item-post">аудио-тренажер</div>
+											</div>
+											<div class="simulator_item-right">
+												<a href="#" class="simulator_item-title">Как успешно зарабатывать деньги на продаже сайтов</a>
+												<div class="simulator_item-question">15 вопросов</div>
+												<div class="simulator_item-status red">Запуск: Никогда</div>
+												<div class="simulator_item-links">
+													<a href="#">
+														<svg class="icon"><use xlink:href="images/sprite.svg#play2"></use></svg>
+														<span>Начать диалог</span>
+													</a>
+													<a href="#">
+														<svg class="icon"><use xlink:href="images/sprite.svg#history"></use></svg>
+														<span>История общения</span>
+													</a>
+												</div>
+											</div>
+										</div>
+	
+										<div class="simulator_item">
+											<div class="simulator_item-left">
+												<div class="simulator_item-photo">
+													<img src="images/simulator_item.png" alt="">
+													<svg class="icon"><use xlink:href="images/sprite.svg#video-tr"></use></svg>
+												</div>
+												<div class="simulator_item-name">Василий Петрович</div>
+												<div class="simulator_item-post">видео-тренажер</div>
+											</div>
+											<div class="simulator_item-right">
+												<a href="#" class="simulator_item-title">Как успешно зарабатывать деньги на продаже сайтов</a>
+												<div class="simulator_item-question">15 вопросов</div>
+												<div class="simulator_item-status blue">Запуск: 2 месяца назад</div>
+												<div class="simulator_item-links">
+													<a href="#">
+														<svg class="icon"><use xlink:href="images/sprite.svg#play2"></use></svg>
+														<span>Продолжить диалог</span>
+													</a>
+													<a href="#">
+														<svg class="icon"><use xlink:href="images/sprite.svg#history"></use></svg>
+														<span>История общения</span>
+													</a>
+												</div>
+											</div>
+										</div>
+	
+										<div class="simulator_item">
+											<div class="simulator_item-left">
+												<div class="simulator_item-photo">
+													<img src="images/simulator_item.png" alt="">
+													<svg class="icon"><use xlink:href="images/sprite.svg#text-tr"></use></svg>
+												</div>
+												<div class="simulator_item-name">Василий Петрович</div>
+												<div class="simulator_item-post">аудио-тренажер</div>
+											</div>
+											<div class="simulator_item-right">
+												<a href="#" class="simulator_item-title">Как успешно зарабатывать деньги на продаже сайтов</a>
+												<div class="simulator_item-question">15 вопросов</div>
+												<div class="simulator_item-status blue">Запуск: Сегодня</div>
+												<div class="simulator_item-links">
+													<a href="#">
+														<svg class="icon"><use xlink:href="images/sprite.svg#play2"></use></svg>
+														<span>Начать диалог</span>
+													</a>
+													<a href="#">
+														<svg class="icon"><use xlink:href="images/sprite.svg#history"></use></svg>
+														<span>История общения</span>
+													</a>
+												</div>
+											</div>
 										</div>
 
-										<div class="questions_count">15 вопросов</div>
-
-										<div class="links">
-											<div><a href="/" class="blue">Запустить</a></div>
-											<div><a href="/" class="orange">История</a></div>
+										<div class="simulator_item webinar_more">
+											<a href="/">
+												<span><svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg></span>
+												Показать еще 37
+											</a>
 										</div>
-
-										<div class="last_date green">Последний запуск: 15.01.2021 в 15:45</div>
-
-										<div class="avatar">
-											<img src="images/tmp/person_photo.jpg" alt="">
-											Василий Иванович
-										</div>
+	
 									</div>
-
-									<div class="simulator">
-										<div class="format blue">видео формат</div>
-
-										<div class="name">
-											<a href="/">Как успешно зарабатывать деньги на продаже сайтов</a>
-										</div>
-
-										<div class="questions_count">15 вопросов</div>
-
-										<div class="links">
-											<div><a href="/" class="blue">Запустить</a></div>
-										</div>
-
-										<div class="last_date red">Последний запуск: Никогда</div>
-
-										<div class="avatar">
-											<img src="images/tmp/person_photo.jpg" alt="">
-											Василий Иванович
-										</div>
-									</div>
-
-									<div class="simulator">
-										<div class="format green">текстовый формат</div>
-
-										<div class="name">
-											<a href="/">Как успешно зарабатывать деньги на продаже сайтов</a>
-										</div>
-
-										<div class="questions_count">15 вопросов</div>
-
-										<div class="links">
-											<div><a href="/" class="blue">Запустить</a></div>
-										</div>
-
-										<div class="last_date red">Последний запуск: Никогда</div>
-
-										<div class="avatar">
-											<img src="images/tmp/person_photo.jpg" alt="">
-											Василий Иванович
-										</div>
-									</div>
-								</div>
+								</section>
 							</section>
 
 
@@ -659,6 +718,13 @@
 											</div>
 										</div>
 									</div>
+
+									<div class="article webinar_more">
+										<a href="/">
+											<span><svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg></span>
+											Показать еще 37
+										</a>
+									</div>
 								</div>
 							</section>
 
@@ -724,6 +790,13 @@
 
 											<div class="last_date">Последний: 15:35 от Иванов Д.</div>
 										</div>
+									</div>
+
+									<div class="discussion webinar_more">
+										<a href="/">
+											<span><svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg></span>
+											Показать еще 37
+										</a>
 									</div>
 								</div>
 							</section>
@@ -793,6 +866,13 @@
 
 											<a href="/" class="link again">Пройти повторно</a>
 										</div>
+									</div>
+
+									<div class="poll webinar_more">
+										<a href="/">
+											<span><svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg></span>
+											Показать еще 37
+										</a>
 									</div>
 								</div>
 							</section>
@@ -1023,6 +1103,13 @@
 											</div>
 										</div>
 									</div>
+
+									<div class="file webinar_more">
+										<a href="/">
+											<span><svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg></span>
+											Показать еще 37
+										</a>
+									</div>
 								</div>
 							</section>
 
@@ -1085,8 +1172,88 @@
 
 										<div class="post">Отдел продаж, менеджер по продажам</div>
 									</div>
+
+									<div class="person webinar_more">
+										<a href="/">
+											<span><svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg></span>
+											Показать еще 37
+										</a>
+									</div>
 								</div>
 							</section>
+
+							<section class="files base_know">
+				                <div class="block_head">
+				                    <div class="icon">
+				                        <svg width="28" height="19"><use xlink:href="images/sprite.svg#ic_category7"></use></svg>
+				                    </div>
+
+				                    <div>
+				                        <div class="title">База знаний</div>
+				                        
+				                    </div>
+
+				                    <div class="all_link">
+				                        <a href="https://demo.xskill.com/cabinet/user/faq" target="_blank">
+				                            <span>Открыть</span>
+				                            <svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+				                        </a>
+				                    </div>
+				                </div>
+
+				                <div class="row">
+									<div class="base_know_item">
+										<div class="base_know_date">
+											04 декабря 2022 в 17:23
+										</div>
+										<div class="base_know_name">
+											Качество шин
+										</div>
+										<div class="base_know_desc">
+											Сезонность
+										</div>
+										<a href="" class="base_know_link">
+											Перейти
+										</a>
+									</div>
+									<div class="base_know_item">
+										<div class="base_know_date">
+											04 декабря 2022 в 17:23
+										</div>
+										<div class="base_know_name">
+											Качество шин
+										</div>
+										<div class="base_know_desc">
+											Сезонность
+										</div>
+										<a href="" class="base_know_link">
+											Перейти
+										</a>
+									</div>
+									<div class="base_know_item">
+										<div class="base_know_date">
+											04 декабря 2022 в 17:23
+										</div>
+										<div class="base_know_name">
+											Качество шин
+										</div>
+										<div class="base_know_desc">
+											Сезонность
+										</div>
+										<a href="" class="base_know_link">
+											Перейти
+										</a>
+									</div>
+
+									<div class="base_know_item webinar_more">
+										<a href="/">
+											<span><svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg></span>
+											Показать еще 37
+										</a>
+									</div>
+								</div>
+
+				            </section>
 
 
 							<footer>
@@ -1133,6 +1300,32 @@
 			Бот, помогающий в обучении
 		</a>
 
+		<a href="" target="_blank" class="telegram_fixed">
+			<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="48px" height="48px"><path fill="#1976d2" d="M24,4C13,4,4,13,4,24s9,20,20,20s20-9,20-20S35,4,24,4z"/><path fill="#fff" d="M25.2,33.2c-9,0-14.1-6.1-14.3-16.4h4.5c0.1,7.5,3.5,10.7,6.1,11.3V16.8h4.2v6.5c2.6-0.3,5.3-3.2,6.2-6.5h4.2	c-0.7,4-3.7,7-5.8,8.2c2.1,1,5.5,3.6,6.7,8.2h-4.7c-1-3.1-3.5-5.5-6.8-5.9v5.9H25.2z"/></svg>
+			Бот, помогающий в обучении
+		</a>
+
+		<a href="" target="_blank" class="telegram_fixed">
+			<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<g clip-path="url(#clip0_905_7460)">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M20 0C31.0469 0 40 8.95313 40 20C40 31.0469 31.0469 40 20 40C8.95313 40 0 31.0469 0 20C0 8.95313 8.95313 0 20 0ZM15.125 8.5625H24.8828C28.5469 8.5625 31.5391 11.5234 31.5391 15.1328V24.8594C31.5391 28.4766 28.5469 31.4297 24.8828 31.4297H15.125C11.4609 31.4297 8.46875 28.4688 8.46875 24.8594V15.1406C8.46875 11.5234 11.4609 8.5625 15.125 8.5625ZM19.9375 13.8281C23.5 13.8281 26.3828 16.7188 26.3828 20.2734C26.3828 23.8359 23.4922 26.7188 19.9375 26.7188C16.375 26.7188 13.4922 23.8281 13.4922 20.2734C13.4922 16.7109 16.375 13.8281 19.9375 13.8281ZM19.9375 16C22.2969 16 24.2109 17.9141 24.2109 20.2734C24.2109 22.6328 22.2969 24.5469 19.9375 24.5469C17.5781 24.5469 15.6641 22.6328 15.6641 20.2734C15.6641 17.9141 17.5781 16 19.9375 16ZM26.1797 12.9297C26.7578 12.9297 27.2266 13.3984 27.2266 13.9766C27.2266 14.5547 26.7578 15.0234 26.1797 15.0234C25.6016 15.0234 25.1328 14.5547 25.1328 13.9766C25.1328 13.3984 25.6016 12.9297 26.1797 12.9297ZM15.9219 10.4297H24.0859C27.1484 10.4297 29.6563 12.9219 29.6563 15.9687V24.1719C29.6563 27.2187 27.1484 29.7109 24.0859 29.7109H15.9219C12.8594 29.7109 10.3516 27.2187 10.3516 24.1719V15.9687C10.3516 12.9297 12.8594 10.4297 15.9219 10.4297Z" fill="url(#paint0_linear_905_7460)"/>
+				</g>
+				<defs>
+				<linearGradient id="paint0_linear_905_7460" x1="30.0222" y1="36.9836" x2="9.97973" y2="3.01822" gradientUnits="userSpaceOnUse">
+				<stop stop-color="#F58529"/>
+				<stop offset="0.169" stop-color="#FEDA77"/>
+				<stop offset="0.478" stop-color="#DD2A7B"/>
+				<stop offset="0.78" stop-color="#8134AF"/>
+				<stop offset="1" stop-color="#515BD4"/>
+				</linearGradient>
+				<clipPath id="clip0_905_7460">
+				<rect width="40" height="40" fill="white"/>
+				</clipPath>
+				</defs>
+			</svg>
+			Бот, помогающий в обучении
+		</a>
+
 		<div class="buttonUp">
 			<button type="button"></button>
 		</div>
@@ -1150,6 +1343,7 @@
 		<script src="js/wavesurfer.js"></script>
 		<script src="js/fancybox.min.js"></script>
 		<script src="js/nice-select.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
 	</body>

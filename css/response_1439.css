@@ -720,7 +720,7 @@
 
     .dialog .head
     {
-        padding: 24px;
+        padding: 24px 24px 50px;
     }
 
     .dialog .head .count
@@ -814,7 +814,10 @@
 
         padding: 40px;
     }
-
+    .dialog .error_text,
+    .dialog .prompt_text {
+        padding: 0 0 0 24px;
+    }
 
     .simulator_actions .error_text,
     .simulator_actions .success_text
@@ -830,7 +833,7 @@
     -----------------*/
     .course_info .thumb + *
     {
-        width: calc(100% - 248px);
+        width: calc(100% - 515px);
     }
 
 
@@ -927,4 +930,12 @@
     .gallery_test_item{
         width: calc(100%/5 - 20px);      
     }
+
+
+
+    .recommendations .mistake_items > * {
+        width: calc(100%/3 - 15px);
+    }
+
+
 }

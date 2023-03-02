@@ -1115,7 +1115,7 @@
 
     .dialog .head
     {
-        padding: 22px;
+        /* padding: 22px; */
     }
 
     .dialog .head .person
@@ -1503,6 +1503,205 @@
     }
     .statistics table {
         margin-bottom: 0;
+    }
+
+    .modul_items {
+        flex-wrap: wrap;
+    }
+    .modul_items > * {
+        width: 100%;
+    }
+    .rating-block_items {
+        padding: 13px;
+    }
+    .rating-block_items {
+        flex-wrap: wrap;
+    }
+    .rating-block_items > * {
+        width: 100%;
+    }
+    .modul_item:last-child {
+        margin-bottom: 0;
+    }
+
+
+
+    /* inclusion.html */
+    .inclusion_items {
+        flex-wrap: wrap;
+    }
+    .inclusion_items > * {
+        margin-left: 15px;
+        margin-bottom: 15px;
+        width: calc(100%/4 - 15px);
+    }
+
+
+    .simulators-new .simulator_items {
+        margin-left: -20px;
+        margin-bottom: -20px;
+    }
+    .simulators-new .simulator_items > * {
+        width: calc(100%/2 - 20px);
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .trainer_items {
+        margin-left: -20px;
+        margin-bottom: -20px;
+    }
+    .trainer_items > * {
+        width: calc(100%/2 - 20px);
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    .dialog .prompt_text, 
+    .dialog .error_text, 
+    .dialog .success_text {
+        padding: 0 24px;
+    }
+
+
+    .inclusion_item-title{
+        height: 38px;
+    }
+
+
+    .mistake_items {
+        flex-wrap: wrap;
+        margin-bottom: -30px;
+    }
+    .mistake_items > * {
+        margin-left: 30px;
+        width: calc(100%/2 - 30px);
+        margin-bottom: 30px;
+    }
+
+
+    .recommendations .mistake_items > * {
+        width: calc(100%/2 - 15px);
+    }
+
+
+    .detailed_items > * {
+        width: calc(100%/3 - 15px);
+        padding: 15px;
+    }
+
+    .simulators-new .simulator_items{
+        display: block;
+        overflow: auto;
+        width: calc(100% + 48px);
+        margin: -24px;
+        padding: 24px;
+        white-space: nowrap;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .simulators-new .simulator_items::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .simulators-new .simulator_items::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .simulators-new .simulator_items > * {
+        display: inline-flex;
+        width: 400px;
+        max-width: none;
+        margin: 0;
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .simulators-new .simulator_items > * + * {
+        margin-left: 20px;
+    }
+
+    .simulators-new .simulator_items.not_slide {
+        display: flex;
+        width: auto;
+        margin-left: -48px;
+    }
+
+    .simulators-new .simulator_items.not_slide > * {
+        width: calc(100%/2 - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+
+
+    .trainer_items{
+        display: block;
+        overflow: auto;
+        width: calc(100% + 48px);
+        margin: -24px;
+        padding: 24px;
+        white-space: nowrap;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+    .trainer_items::-webkit-scrollbar
+    {
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .trainer_items::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .trainer_items > * {
+        display: inline-block;
+        width: 264px;
+        max-width: none;
+        margin: 0;
+        vertical-align: top;
+        white-space: normal;
+    }
+
+    .trainer_items > * + * {
+        margin-left: 20px;
+    }
+
+    .trainer_items.not_slide {
+        display: flex;
+        width: auto;
+        margin-left: -48px;
+    }
+
+    .trainer_items.not_slide > * {
+        width: calc(100%/2 - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .answer-option_items {
+        margin-left: -15px;
+        margin-bottom: -20px;
+    }
+    .answer-option_items > * {
+        width: calc(100%/2 - 15px);
+        margin-left: 15px;
+        margin-bottom: 20px;
     }
 
 }

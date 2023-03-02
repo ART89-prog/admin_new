@@ -355,7 +355,53 @@
 										</div>										
 									</li>
 								</ul>
-								<button type="submit">Сформировать отчет</button>
+
+								<div class="create-report_btns">
+									<button type="submit" class="modal_btn" data-content="#report_modal">Сформировать отчет</button>
+									<button type="submit" class="modal_btn" data-content="#modal-page1">Сформировать отчет</button>
+									<button type="submit" class="modal_btn" data-content="#modal-page2">Сформировать отчет</button>
+									<button type="submit" class="modal_btn" data-content="#modal-page3">Сформировать отчет</button>	
+									<button type="submit" class="modal_btn" data-content="#modal-page6">Отчет по плану</button>	
+								</div>
+								
+
+
+
+								<div class="create-report_title">Последние заказанные отчеты</div>
+								<div class="table-wrap">
+									<table>
+										<thead>
+											<tr>
+												<th>Дата</th>
+												<th>Описание</th>
+												<th>Статус</th>
+												<th>Открыть</th>
+											</tr>
+										</thead>
+								
+										<tbody>
+											<tr>
+												<td>27.12.2022 в 16:15</td>
+												<td>Вы можете сформировать отчет. Какое то небольшое описание для людей. Служба Яндекс.Рефераты предназначена</td>
+												<td><span class="blau"></span>Новый</td>
+												<td><a href="#">Открыть отчет</a></td>
+											</tr>
+											<tr>
+												<td>27.12.2022 в 16:15</td>
+												<td>Вы можете сформировать отчет. Какое то небольшое описание для людей</td>
+												<td><span class="yellow"></span>Создается</td>
+												<td>Пока не готов</td>
+											</tr>
+											<tr>
+												<td>27.12.2022 в 16:15</td>
+												<td>Вы можете сформировать отчет. Какое то небольшое описание для людей</td>
+												<td><span class="green"></span>Готов</td>
+												<td><a href="#">Открыть отчет</a></td>
+											</tr>
+										</tbody>  
+									</table>	
+								</div>
+
 							</section>
 	
 
@@ -408,6 +454,261 @@
 				<a href="">Начать</a>
 			</div>
 		</section>
+
+
+		<section class="report_modal correction_modal" id="report_modal">			
+			<div class="correction_modal-title">Выберите модуль и тип отчета</div>											
+			<form class="correction_modal-form">
+				<div class="report_modal-label">Модуль</div>				
+				<div class="line">
+					<div class="field">
+						<input id="radio-1" type="radio" name="radio">
+                    	<label for="radio-1">Тренажер</label>
+					</div>
+					<div class="field">
+						<input id="radio-2" type="radio" name="radio">
+                    	<label for="radio-2">Симулятор</label>
+					</div>
+				</div>	
+				<div class="report_modal-label">Тип отчета</div>
+				<div class="line">
+					<div class="field">
+						<input id="radio-3" type="radio" name="radio">
+                    	<label for="radio-3">Тип №1</label>
+					</div>
+					<div class="field">
+						<input id="radio-4" type="radio" name="radio">
+                    	<label for="radio-4">Тип №2</label>
+					</div>
+					<div class="field">
+						<input id="radio-5" type="radio" name="radio">
+                    	<label for="radio-5">Тип №3</label>
+					</div>
+					<div class="field">
+						<input id="radio-6" type="radio" name="radio">
+                    	<label for="radio-6">Тип №4</label>
+					</div>
+				</div>	
+				<div class="correction_modal-btns">
+					<a href="#" class="correction_modal-form-btn active">
+						<span>Сформировать отчет</span>					
+					</a>			
+				</div>							
+			</form>
+		</section>
+
+
+		<section class="modal-page" id="modal-page1">
+			<div class="modal-page_img">
+				<img src="images/modal-page-img.jpg" alt="">
+			</div>
+			<div class="modal-page_title">Главный экран</div>
+			<div class="modal-page_text">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков. Нажав на кнопку «Написать реферат»</div>
+			<a href="#" class="modal-page_link">
+				<span>Я понял. Начать работу</span>
+			</a>
+		</section>
+
+
+		<section class="modal-page" id="modal-page2">
+			<div class="modal-page_img">
+				<img src="images/modal-page-img.jpg" alt="">
+			</div>
+			<div class="modal-page_title">Главный экран</div>
+			<ul class="modal-page_list">
+				<li>Пункт номер один. Что то написано здесь</li>
+				<li>Пункт номер два. Какой то пункт на несколько строк</li>
+				<li>Пункт номер три. Что то написано здесь</li>
+			</ul>
+			<a href="#" class="modal-page_link">
+				<span>Я понял. Начать работу</span>
+			</a>
+		</section>
+
+
+		<section class="modal-page" id="modal-page3">
+			<div class="modal-page_img">
+				<img src="images/modal-page-img.jpg" alt="">
+			</div>
+			<div class="modal-page_title">Главный экран</div>
+			<div class="modal-page_text">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков. Нажав на кнопку «Написать реферат»</div>
+			<div class="modal-page_dots">
+				<span class="active"></span>
+				<span></span>
+				<span></span>
+			</div>
+			<a href="#" class="modal-page_link modal_btn" data-content="#modal-page4">
+				<span>Далее</span>
+			</a>
+		</section>
+
+
+		<section class="modal-page modal-page4" id="modal-page4">
+			<div class="modal-page_img modal-page_img_nomargin">
+				<img src="images/modal-page-img.jpg" alt="">
+			</div>
+			<div class="modal-page_title">Главный экран</div>
+			<div class="modal-page_text">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков. Нажав на кнопку «Написать реферат»</div>
+			<div class="modal-page_dots">
+				<span></span>
+				<span  class="active"></span>
+				<span></span>
+			</div>
+			<a href="#" class="modal-page_link modal_btn" data-content="#modal-page5">
+				<span>Далее</span>
+			</a>
+		</section>
+
+
+		<section class="modal-page modal-page5" id="modal-page5">
+			<div class="video_message">
+				<div class="modal-page_img modal-page_img_nomargin">
+					<img src="images/modal-page-img2.jpg" alt="">
+					<button class="thumb modal_btn" data-content="#video_modal">
+						<svg class="icon"><use xlink:href="images/sprite.svg#modal_play"></use></svg>
+					</button>	
+				</div>				
+			</div>
+			<div class="modal-page_title">Главный экран</div>
+			<div class="modal-page_text">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков. Нажав на кнопку «Написать реферат»</div>
+			<div class="modal-page_dots">
+				<span></span>
+				<span></span>
+				<span  class="active"></span>
+			</div>
+			<a href="#" class="modal-page_link" data-fancybox-close>
+				<span>Далее</span>
+			</a>
+		</section>
+
+
+
+		<section class="modal-page modal-page6" id="modal-page6">			
+			<div class="modal-page_title">Выберите нужное количество курсов, симуляторов и тренажеров</div>
+			<form class="form">
+				<div class="line">
+					<div class="field">
+						<label for="">Курсы</label>
+						<input type="number" placeholder="15">
+					</div>
+					<div class="field">
+						<label for="">Симуляторы</label>
+						<input type="number" placeholder="7">
+					</div>
+					<div class="field">
+						<label for="">Тренажеры</label>
+						<input type="number" placeholder="0">
+					</div>
+				</div>
+			</form>
+			<a href="#" class="modal-page_link modal_btn" data-content="#modal-page7">
+				<span>Далее</span>
+			</a>
+		</section>
+
+
+		
+		<section class="modal-page modal-page6 modal-page7" id="modal-page7">			
+			<div class="modal-page_title">Выберите нужные каталоги</div>
+			<form class="form">
+				<div class="form_item">
+					<div class="form_title">
+						<span>Курсы</span>
+						<a href="#" class="choose-link">Выбрать все</a>
+						<a href="#" class="remove-link">Убрать все</a>
+					</div>
+					<ul class="form_list">
+						<li>
+							<div class="checkbox">
+								<input type="checkbox" id="check101" checked="">
+								<label for="check101" class="checkbox">Папка с симуляторами станков</label>
+							</div>										
+						</li>
+						<li>
+							<div class="checkbox">
+								<input type="checkbox" id="check201" checked="">
+								<label for="check201" class="checkbox">Папка простыми симуляторами</label>
+							</div>										
+						</li>
+						<li>
+							<div class="checkbox">
+								<input type="checkbox" id="check301">
+								<label for="check301" class="checkbox">Еще какая то папка</label>
+							</div>										
+						</li>						
+					</ul>
+				</div>
+
+				<div class="form_item">
+					<div class="form_title">
+						<span>Симуляторы</span>
+						<a href="#" class="choose-link">Выбрать все</a>
+						<a href="#" class="remove-link">Убрать все</a>
+					</div>
+					<ul class="form_list">
+						<li>
+							<div class="checkbox">
+								<input type="checkbox" id="check102" checked="">
+								<label for="check102" class="checkbox">Папка с симуляторами станков</label>
+							</div>										
+						</li>
+						<li>
+							<div class="checkbox">
+								<input type="checkbox" id="check202" checked="">
+								<label for="check202" class="checkbox">Папка простыми симуляторами</label>
+							</div>										
+						</li>
+						<li>
+							<div class="checkbox">
+								<input type="checkbox" id="check302">
+								<label for="check302" class="checkbox">Еще какая то папка</label>
+							</div>										
+						</li>						
+					</ul>
+				</div>
+
+				<div class="form_item">
+					<div class="form_title">
+						<span>Тренажеры</span>
+						<a href="#" class="choose-link">Выбрать все</a>
+						<a href="#" class="remove-link">Убрать все</a>
+					</div>
+					<ul class="form_list">
+						<li>
+							<div class="checkbox">
+								<input type="checkbox" id="check103" checked="">
+								<label for="check103" class="checkbox">Папка с симуляторами станков</label>
+							</div>										
+						</li>
+						<li>
+							<div class="checkbox">
+								<input type="checkbox" id="check203" checked="">
+								<label for="check203" class="checkbox">Папка простыми симуляторами</label>
+							</div>										
+						</li>
+						<li>
+							<div class="checkbox">
+								<input type="checkbox" id="check303">
+								<label for="check303" class="checkbox">Еще какая то папка</label>
+							</div>										
+						</li>						
+					</ul>
+				</div>
+				<div class="form_btns">
+					<a href="#" class="modal-page_link modal-page_link3 modal_btn" data-content="#modal-page6">
+						<span>Назад</span>
+					</a>
+					<button type="submit" class="modal-page_link modal-page_link2">
+						<span>Сформировать</span>
+					</button>	
+
+				</div>
+				
+			</form>
+
+			
+		</section>
+
 
 
 		<section class="modal" id="video_modal">

@@ -27,6 +27,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
 		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/nice-select.css">
 		<link rel="stylesheet" href="css/fancybox.css" async>
 		<link rel="stylesheet" href="css/styles.css" async>
 
@@ -299,8 +300,57 @@
 
 							<div class="message_new error"><div>Невозможно начать курс</div><button class="close_new_message">х</button></div>
 
+							<form class="courses_faq">
+								<input type="text" class="js-search-courses input" placeholder="Поиск">
+							</form>
+
+							<div class="title_courses_result">Поиск: <span></span> <button><img src="images/reset.svg" alt=""></button></div>
+
+
+							<section class="courses not_my"><div class="row not_slide found_course"></div></section>
+
+							<!-- <section class="training-course">
+								<div class="wrapper_head_courses">
+									<div class="block_title">
+										Курсы вышивания	
+									</div>
+								</div>
+
+								<div class="training-course_items">
+									<a href="#" class="training-course_item training-course_item_mod">
+										<div class="training-course_item-label">15 курсов</div>
+										<div class="training-course_item-title training-course_item-title_mod">Курсы по обучению работе на станках изготовления шин</div>
+										<div class="training-course_item-text">Обновлено 3 дня назад</div>															
+									</a>
+									<a href="#" class="training-course_item training-course_item_mod">
+										<div class="training-course_item-label">15 курсов</div>
+										<div class="training-course_item-title training-course_item-title_mod">Обучающие курсы</div>
+										<div class="training-course_item-text">Обновлено 04.11.2022</div>																			
+									</a>
+									<a href="#" class="training-course_item training-course_item_mod">
+										<div class="training-course_item-label">15 курсов</div>
+										<div class="training-course_item-title training-course_item-title_mod">Курсы для менеджеров по продаже шин</div>
+										<div class="training-course_item-text">Обновлено 1 час назад</div>																	
+									</a>	
+								</div>	
+							</section> -->
+
 							<section class="courses">
-								<div class="block_title">Курсы вышивания</div>
+
+								<div class="wrapper_head_courses">
+									<div class="block_title">
+										Курсы вышивания	
+									</div>
+
+									<div class="select-right">
+										<span>Карточка урока:</span>
+										<select>
+											<option>Маленькая</option>
+											<option>Средняя</option>
+											<option>Большая</option>
+										</select>	
+									</div>
+								</div>
 
 								<div class="row not_slide">
 									<div class="course">
@@ -314,11 +364,11 @@
 										</a>
 
 										<div class="info">
-											<div class="name">
+											<div class="name" data-search="Краткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строки">
 												<a href="/">Продажи сайтов</a>
 											</div>
 
-											<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
+											<div class="desc" title="Краткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строки">Краткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строки</div>
 
 											<div class="progress">
 												<div class="line" style="width: 0%;"></div>
@@ -339,7 +389,7 @@
 										</a>
 
 										<div class="info">
-											<div class="name">
+											<div class="name" data-search="Краткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строки">
 												<a href="/">Узнай свой психотип</a>
 											</div>
 
@@ -365,7 +415,7 @@
 										</a>
 
 										<div class="info">
-											<div class="name">
+											<div class="name" data-search="Краткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строки">
 												<a href="/">Передержка кошек, а также других питомцев на даче!</a>
 											</div>
 
@@ -394,7 +444,7 @@
 										</a>
 
 										<div class="info">
-											<div class="name">
+											<div class="name" data-search="Краткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строки">
 												<a href="/">Продажи сайтов</a>
 											</div>
 
@@ -419,7 +469,7 @@
 										</a>
 
 										<div class="info">
-											<div class="name">
+											<div class="name" data-search="Нет нет">
 												<a href="/">Передержка кошек, а также других питомцев на даче!</a>
 											</div>
 
@@ -441,7 +491,7 @@
 										</div>
 
 										<div class="info">
-											<div class="name">
+											<div class="name" data-search="нет">
 												<svg class="icon"><use xlink:href="images/sprite.svg#ic_lock"></use></svg>
 												<span>Узнай свой психотип</span>
 											</div>
@@ -475,7 +525,7 @@
 										</a>
 
 										<div class="info">
-											<div class="name">
+											<div class="name" data-search="нет">
 												<a href="/">Передержка кошек, а также других питомцев на даче!</a>
 											</div>
 
@@ -497,7 +547,7 @@
 										</div>
 
 										<div class="info">
-											<div class="name">
+											<div class="name" data-search="Краткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строки">
 												<svg class="icon"><use xlink:href="images/sprite.svg#ic_lock"></use></svg>
 												<span>Узнай свой психотип</span>
 											</div>
@@ -524,8 +574,8 @@
 										</a>
 
 										<div class="info">
-											<div class="name">
-												<a href="/">Продажи сайтов</a>
+											<div class="name" data-search="Краткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строкиКраткое описание курса или урока, максимум на две строки">
+												<a href="/">Про сайтов</a>
 											</div>
 
 											<div class="desc">Краткое описание курса или урока, максимум на две строки</div>
@@ -594,5 +644,6 @@
 		<script src="js/nice-select.js"></script>
 		<script src="js/functions.js"></script>
 		<script src="js/scripts.js"></script>
+		<script src="js/search_courses.js"></script>
 	</body>
 </html>

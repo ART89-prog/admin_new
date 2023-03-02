@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<!-- Адаптирование страницы для мобильных устройств -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<!-- Запрет распознования номера телефона -->
+		<meta name="format-detection" content="telephone=no">
+		<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+
+		<!-- Заголовок страницы -->
+		<title>Заголовок страницы</title>
+
+		<!-- Данное значение часто используют(использовали) поисковые системы -->
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+
+		<!-- Изменение цвета панели моб. браузера -->
+		<meta name="msapplication-TileColor" content="#0B00D8">
+		<meta name="theme-color" content="#0B00D8">
+
+		<!-- Подключение шрифтов с гугла -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+		<!-- Подключение файлов стилей -->
+		<link rel="stylesheet" href="css/fancybox.css" async>
+		<link rel="stylesheet" href="css/circle.css" async>
+		<link rel="stylesheet" href="css/styles.css" async>
+
+		<link rel="stylesheet" href="css/response_1439.css" media="print, (max-width: 1439px)" async>
+		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)" async>
+		<link rel="stylesheet" href="css/response_1023.css" media="print, (max-width: 1023px)" async>
+		<link rel="stylesheet" href="css/response_767.css" media="print, (max-width: 767px)" async>
+		<link rel="stylesheet" href="css/response_479.css" media="(max-width: 479px)" async>
+	</head>
+
+	<body>
+		<div class="wrap">
+			<div class="main">
+				<header>
+					<div class="cont row">
+						<div class="logo">
+							<img src="images/logo.svg" alt="">
+						</div>
+
+						<div class="wallet">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_wallet"></use></svg>
+							<span>1243</span>
+						</div>
+
+						<div class="sep"></div>
+
+						<div class="account">
+							<a href="/" class="settings_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg>
+							</a>
+
+							<div class="user">
+								<div class="avatar">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									<!-- <img data-src="" alt="" class="lozad"> -->
+								</div>
+
+								<div class="name">Модератор</div>
+							</div>
+
+							<a href="/" class="logout_link">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
+							</a>
+						</div>
+					</div>
+				</header>
+
+
+				<section class="mob_header">
+					<div class="row">
+						<button class="menu_btn">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_menu"></use></svg>
+						</button>
+
+						<div class="page_title">Сводка</div>
+
+						<div class="wallet">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_wallet"></use></svg>
+							<span>1243</span>
+						</div>
+
+						<div class="nitifications new">
+							<svg class="icon"><use xlink:href="images/sprite.svg#ic_nitifications"></use></svg>
+						</div>
+
+						<div class="account modal_cont">
+							<button class="user btn mini_modal_btn" data-modal-id="#account_modal">
+								<div class="avatar">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_user"></use></svg>
+									<img data-src="images/tmp/user_avatar.jpg" alt="" class="lozad">
+								</div>
+
+								<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+							</button>
+
+							<div class="mini_modal" id="account_modal">
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_settings"></use></svg>
+									<span>Настройки</span>
+								</a></div>
+
+								<div><a href="/">
+									<svg class="icon"><use xlink:href="images/sprite.svg#ic_logout"></use></svg>
+									<span>Выход</span>
+								</a></div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+
+				<section class="content_flex">
+					<div class="cont row">
+						<aside>
+							<button class="close_btn">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_close"></use></svg>
+							</button>
+
+							<div class="menu">
+								<div class="item">
+									<a href="/">
+										<div class="icon icon1">
+											<svg><use xlink:href="images/sprite.svg#ic_category1"></use></svg>
+										</div>
+										<span>Сводка</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon2 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category2"></use></svg>
+										</div>
+										<span>Мои задачи</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a  href="#" class="sub_link active open">
+										<div class="icon icon3 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category3"></use></svg>
+										</div>
+										<span>Курсы</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu" style="display: block;">
+										<div><a class="active">
+											<span class="count">3</span>
+											<span>Все курсы</span>
+										</a></div>
+										<div><a href="/">Новые курсы</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="#" class="sub_link">
+										<div class="icon icon4 point">
+											<svg><use xlink:href="images/sprite.svg#ic_category4"></use></svg>
+										</div>
+										<span>Обратная связь</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/">По тренажерам</a></div>
+										<div><a href="/">По заданиям</a></div>
+										<div><a href="/">По другому</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5">
+											<svg><use xlink:href="images/sprite.svg#ic_category5"></use></svg>
+										</div>
+										<span>Тренажеры</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5_2">
+											<svg><use xlink:href="images/sprite.svg#ic_category5_2"></use></svg>
+										</div>
+										<span>Аудио тренажеры</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon5_3">
+											<svg><use xlink:href="images/sprite.svg#ic_category5_3"></use></svg>
+										</div>
+										<span>Тренажеры действий</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon6">
+											<svg><use xlink:href="images/sprite.svg#ic_category6"></use></svg>
+										</div>
+										<span>Новости</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon7">
+											<svg><use xlink:href="images/sprite.svg#ic_category7"></use></svg>
+										</div>
+										<span>Опросы</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon8">
+											<svg><use xlink:href="images/sprite.svg#ic_category8"></use></svg>
+										</div>
+										<span>Обсуждения</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon9">
+											<svg><use xlink:href="images/sprite.svg#ic_category9"></use></svg>
+										</div>
+										<span>Вебинары</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon10">
+											<svg><use xlink:href="images/sprite.svg#ic_category10"></use></svg>
+										</div>
+										<span>Подкасты</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon11">
+											<svg><use xlink:href="images/sprite.svg#ic_category11"></use></svg>
+										</div>
+										<span>Файлы</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon12">
+											<svg><use xlink:href="images/sprite.svg#ic_category12"></use></svg>
+										</div>
+										<span>Коллеги</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon15">
+											<svg><use xlink:href="images/sprite.svg#ic_category15"></use></svg>
+										</div>
+										<span>Статистика</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/">
+										<div class="icon icon13">
+											<svg><use xlink:href="images/sprite.svg#ic_category13"></use></svg>
+										</div>
+										<span>Настройки</span>
+									</a>
+								</div>
+
+								<div class="item">
+									<a href="/" class="sub_link">
+										<div class="icon icon14">
+											<svg><use xlink:href="images/sprite.svg#ic_category14"></use></svg>
+										</div>
+										<span>Управление</span>
+										<svg class="arrow"><use xlink:href="images/sprite.svg#ic_arrow_down"></use></svg>
+									</a>
+
+									<div class="sub_menu">
+										<div><a href="/"></a></div>
+									</div>
+								</div>
+							</div>
+						</aside>
+
+
+						<section class="content recommendations">
+							<div class="block_top-info">
+								<div class="block_title">Рекомендации</div>
+								<div class="block_text">Ваши персональные рекомендации от системы</div>	
+							</div>
+
+							<section class="mistake">
+								<div class="mistake_items">
+									<div class="mistake_item green">
+										<div class="c100 p70">
+											<span>70</span>
+											<div class="slice">
+												<div class="bar"></div>
+												<div class="fill"></div>
+											</div>
+										</div>
+										<div class="mistake_item-info">
+											<div class="mistake_item_title">Цены</div>
+											<div class="mistake_item-text">05 декабря 2022</div>
+										</div>
+										<div class="mistake_item-arrow">
+											<svg class="icon"><use xlink:href="images/sprite.svg#mistake-arrow"></use></svg>											</div>
+									</div>
+									<div class="mistake_item yellow">
+										<div class="c100 p51">
+											<span>51</span>
+											<div class="slice">
+												<div class="bar"></div>
+												<div class="fill"></div>
+											</div>
+										</div>
+										<div class="mistake_item-info">
+											<div class="mistake_item_title">Знание продукта</div>
+											<div class="mistake_item-text">05 декабря 2022</div>
+										</div>
+										<div class="mistake_item-arrow">
+											<svg class="icon"><use xlink:href="images/sprite.svg#mistake-arrow"></use></svg>											</div>
+									</div>
+									<div class="mistake_item red">
+										<div class="c100 p23">
+											<span>23</span>
+											<div class="slice">
+												<div class="bar"></div>
+												<div class="fill"></div>
+											</div>
+										</div>
+										<div class="mistake_item-info">
+											<div class="mistake_item_title">Звонки</div>
+											<div class="mistake_item-text">05 декабря 2022</div>
+										</div>
+										<div class="mistake_item-arrow">
+											<svg class="icon"><use xlink:href="images/sprite.svg#mistake-arrow"></use></svg>											</div>
+									</div>
+									<div class="mistake_item green">
+										<div class="c100 p70">
+											<span>70</span>
+											<div class="slice">
+												<div class="bar"></div>
+												<div class="fill"></div>
+											</div>
+										</div>
+										<div class="mistake_item-info">
+											<div class="mistake_item_title">Характеристики</div>
+											<div class="mistake_item-text">05 декабря 2022</div>
+										</div>
+										<div class="mistake_item-arrow">
+											<svg class="icon"><use xlink:href="images/sprite.svg#mistake-arrow"></use></svg>											</div>
+									</div>
+									<div class="mistake_item yellow">
+										<div class="c100 p60">
+											<span>60</span>
+											<div class="slice">
+												<div class="bar"></div>
+												<div class="fill"></div>
+											</div>
+										</div>
+										<div class="mistake_item-info">
+											<div class="mistake_item_title">Маркетинг</div>
+											<div class="mistake_item-text">05 декабря 2022</div>
+										</div>
+										<div class="mistake_item-arrow">
+											<svg class="icon"><use xlink:href="images/sprite.svg#mistake-arrow"></use></svg>											</div>
+									</div>
+									<div class="mistake_item red">
+										<div class="c100 p25">
+											<span>25</span>
+											<div class="slice">
+												<div class="bar"></div>
+												<div class="fill"></div>
+											</div>
+										</div>
+										<div class="mistake_item-info">
+											<div class="mistake_item_title">Холодные звонки</div>
+											<div class="mistake_item-text">05 декабря 2022</div>
+										</div>
+										<div class="mistake_item-arrow">
+											<svg class="icon"><use xlink:href="images/sprite.svg#mistake-arrow"></use></svg>											</div>
+									</div>
+									<div class="mistake_item green">
+										<div class="c100 p95">
+											<span>95</span>
+											<div class="slice">
+												<div class="bar"></div>
+												<div class="fill"></div>
+											</div>
+										</div>
+										<div class="mistake_item-info">
+											<div class="mistake_item_title">Продукты</div>
+											<div class="mistake_item-text">05 декабря 2022</div>
+										</div>
+										<div class="mistake_item-arrow">
+											<svg class="icon"><use xlink:href="images/sprite.svg#mistake-arrow"></use></svg>											</div>
+									</div>
+								</div>
+							</section>
+
+
+							<div class="block_top-info">
+								<div class="block_title">Подробнее</div>
+								<div class="block_text">Рекомендуем изучить материалы</div>	
+							</div>
+
+
+							<section class="detailed">
+								<div class="detailed_top">
+									<div class="mistake_item green">
+										<div class="c100 p70">
+											<span>70</span>
+											<div class="slice">
+												<div class="bar"></div>
+												<div class="fill"></div>
+											</div>
+										</div>
+										<div class="mistake_item-info">
+											<div class="mistake_item_title">Цены</div>
+											<div class="mistake_item-text">от 05 декабря 2022, 13:45</div>
+										</div>
+									</div>
+								</div>
+								<div class="detailed_items">
+									<div class="detailed_item">
+										<div class="detailed_item-label">Вебинар</div>
+										<div class="detailed_item-title">Посетить вебинар “Производство шин на нашем заводе”. Длинное название</div>
+										<div class="detailed_item-text">Состоится: 04 декабря 2022 в 17:23</div>
+										<div class="detailed_item-links">
+											<a href="#" class="detailed_item-link-left">Перейти</a>
+											<a href="#" class="detailed_item-link-right">Изучил</a>
+										</div>
+									</div>
+									<div class="detailed_item">
+										<div class="detailed_item-label">Вебинар</div>
+										<div class="detailed_item-title">Посетить вебинар “Производство шин на нашем заводе”. Длинное название</div>
+										<div class="detailed_item-text">Состоится: 04 декабря 2022 в 17:23</div>
+										<div class="detailed_item-links">
+											<a href="#" class="detailed_item-link-left">Перейти</a>
+											<a href="#" class="detailed_item-link-right">Изучил</a>
+										</div>
+									</div>
+									<div class="detailed_item">
+										<div class="detailed_item-label">Вебинар</div>
+										<div class="detailed_item-title">Посетить вебинар “Производство шин на нашем заводе”. Длинное название</div>
+										<div class="detailed_item-text">Состоится: 04 декабря 2022 в 17:23</div>
+										<div class="detailed_item-links">
+											<a href="#" class="detailed_item-link-left">Перейти</a>
+											<a href="#" class="detailed_item-link-right">Изучил</a>
+										</div>
+									</div>
+									<div class="detailed_item active">
+										<div class="detailed_item-label">Вебинар</div>
+										<div class="detailed_item-title">Посетить вебинар “Производство шин на нашем заводе”. Длинное название</div>
+										<div class="detailed_item-text">Состоится: 04 декабря 2022 в 17:23</div>
+										<div class="detailed_item-links">
+											<a href="#" class="detailed_item-link-left">Перейти</a>
+											<a href="#" class="detailed_item-link-right">Изучил</a>
+										</div>
+									</div>
+								</div>
+							</section>
+
+
+							
+
+
+							<footer>
+								<div class="logo">
+									<img src="images/logo.svg" alt="">
+
+									<div class="desc">Описание первой компании 123</div>
+								</div>
+
+								<div class="contacts location">
+									<div class="name">Адрес</div>
+
+									<div class="val">г. Москва, ул. Ломоносова, д. 75</div>
+								</div>
+
+								<div class="contacts email">
+									<div class="name">Электронная почта</div>
+
+									<div class="val">
+										<div><a href="mailto:company1@gmail.com">company1@gmail.com</a></div>
+									</div>
+								</div>
+
+								<div class="contacts phone">
+									<div class="name">Телефон</div>
+
+									<div class="val">
+										<div><a href="tel:+79219879988">+79219879988</a></div>
+									</div>
+								</div>
+							</footer>
+
+							
+							<div class="survey-modal_btn-wrap">
+								<a href="#" class="survey-modal_btn modal_btn" data-content="modal-survey1">Кнопка 1</a>
+								<a href="#" class="survey-modal_btn modal_btn" data-content="modal-survey2">Кнопка 2</a>
+								<a href="#" class="survey-modal_btn modal_btn" data-content="modal-survey3">Кнопка 3</a>
+								<a href="#" class="survey-modal_btn modal_btn" data-content="modal-survey4">Кнопка 4</a>
+								<a href="#" class="survey-modal_btn modal_btn" data-content="modal-survey5">Кнопка 5</a>	
+							</div>
+							
+						</section>
+					</div>
+				</section>
+			</div>
+		</div>
+
+
+		<section class="modal" id="test">
+			<img data-src="images/ic_warning.svg" alt="" class="icon lozad">
+
+			<div class="modal_title">Аттестация по теме “Маркетинг в IT-Сфере”</div>
+
+			<div class="modal_desc">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок. Теперь никто не сможет обвинить вас в плагиате, ибо каждый текст Яндекс.Рефератов неповторим.</div>
+
+			<div class="btns">
+				<button class="close_btn btn">Позже</button>
+
+				<a href="">Начать</a>
+			</div>
+		</section>
+
+
+		<section class="modal" id="video_modal">
+			<video class="video-player video_new" width="100%" controlsList="nodownload" controls crossorigin="anonymous">
+			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.mp4" type="video/mp4">
+			    <source src="https://thepaciellogroup.github.io/AT-browser-tests/video/ElephantsDream.webm" type="video/webm">
+			    <track src="https://thepaciellogroup.github.io/AT-browser-tests/video/subtitles-en.vtt" label="English subtitles" kind="captions" srclang="en" default></track>
+			</video>
+		</section>
+
+
+
+		<section class="details-modal" id="callback_modal">
+			<div class="details-modal_title">Ответы других экспертов</div>
+			<div class="dialog_items">
+				<div class="dialog_item">
+					<div class="dialog_item-avatar">
+						<img src="images/avatar3.png " alt="">
+					</div>
+					<div class="dialog_item-info">
+						<div class="dialog_item-author">Мария Сергеева</div>
+						<div class="dialog_item-text">Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит текст</div>
+					</div>
+				</div>
+				<div class="dialog_item">
+					<div class="dialog_item-avatar">
+						<img src="images/avatar3.png " alt="">
+					</div>
+					<div class="dialog_item-info">
+						<div class="dialog_item-author">Мария Сергеева</div>
+						<div class="dialog_item-text">Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит текст</div>
+					</div>
+				</div>
+				<div class="dialog_item">
+					<div class="dialog_item-avatar">
+						<img src="images/avatar3.png " alt="">
+					</div>
+					<div class="dialog_item-info">
+						<div class="dialog_item-author">Мария Сергеева</div>
+						<div class="dialog_item-text">Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит текст</div>
+					</div>
+				</div>
+				<div class="dialog_item">
+					<div class="dialog_item-avatar">
+						<img src="images/avatar3.png " alt="">
+					</div>
+					<div class="dialog_item-info">
+						<div class="dialog_item-author">Мария Сергеева</div>
+						<div class="dialog_item-text">Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит текст</div>
+					</div>
+				</div>	
+			</div>			
+		</section>
+
+		<section class="details-modal" id="answer">
+			<div class="details-modal_title">Правильный ответ</div>
+			<div class="dialog_items">
+				<div class="dialog_item">
+					<div class="dialog_item-info">
+						<div class="dialog_item-author">Мария Сергеева</div>
+						<div class="dialog_item-text">Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит текст</div>
+					</div>
+				</div>
+			</div>			
+		</section>
+
+
+		
+		<section class="modal-estimate" id="estimate">
+			<div class="modal-estimate_title">
+				<svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M25.5 0C11.424 0 0 11.424 0 25.5C0 39.576 11.424 51 25.5 51C39.576 51 51 39.576 51 25.5C51 11.424 39.576 0 25.5 0ZM25.5 38.25C24.0975 38.25 22.95 37.1025 22.95 35.7V25.5C22.95 24.0975 24.0975 22.95 25.5 22.95C26.9025 22.95 28.05 24.0975 28.05 25.5V35.7C28.05 37.1025 26.9025 38.25 25.5 38.25ZM28.05 17.85H22.95V12.75H28.05V17.85Z" fill="#FF0505"/>
+				</svg>
+				<span>Пройдите <br>	оценку знаний</span>					
+			</div>
+			<div class="modal-estimate_text">Это обязательный этап, его нельзя пропустить. Это займёт не более 5-10 минут вашего времени</div>
+			<a href="#" class="modal-estimate_link">
+				<span>Начать</span>
+			</a>
+		</section>
+
+		
+		<section class="modal-survey" id="modal-survey1">		
+			<div class="modal-survey_title">Какое у вас <br>сегодня настроение?</div>
+			<div class="modal-survey_text">Выберите смайл подходящий под ваше сегодняшнее настроение</div>
+			<form class="rating">
+				<input type="radio" name="smile" id="smile1">
+				<label for="smile1">
+					<img src="images/smile1.svg" alt="">
+				</label>
+				<input type="radio" name="smile" id="smile2">
+				<label for="smile2">
+					<img src="images/smile2.svg" alt="">
+				</label>
+				<input type="radio" name="smile" id="smile3">
+				<label for="smile3">
+					<img src="images/smile3.svg" alt="">
+				</label>
+				<input type="radio" name="smile" id="smile4" checked="">
+				<label for="smile4">
+					<img src="images/smile4.svg" alt="">
+				</label>
+				<input type="radio" name="smile" id="smile5">
+				<label for="smile5">
+					<img src="images/smile5.svg" alt="">
+				</label>
+			</form>   
+			<button class="modal-survey_btn">
+				<span>Отправить</span>
+			</button>
+		</section>
+
+
+
+		<section class="modal-survey" id="modal-survey2">		
+			<div class="modal-survey_title">Как прошел ваш день?</div>
+			<div class="modal-survey_text">Оцените прошедший день по шкале от одного до пяти</div>
+			<form class="scale">
+				<input type="radio" name="scale" id="scale1">
+				<label for="scale1">
+					1
+				</label>
+				<input type="radio" name="scale" id="scale2">
+				<label for="scale2">
+					2
+				</label>
+				<input type="radio" name="scale" id="scale3">
+				<label for="scale3">
+					3
+				</label>
+				<input type="radio" name="scale" id="scale4" checked="">
+				<label for="scale4">
+					4
+				</label>
+				<input type="radio" name="scale" id="scale5">
+				<label for="scale5">
+					5
+				</label>
+			</form>   
+			<button class="modal-survey_btn">
+				<span>Отправить</span>
+			</button>
+		</section>
+
+
+
+
+		<section class="modal-survey" id="modal-survey3">		
+			<div class="modal-survey_title">Оцените курс</div>
+			<div class="modal-survey_text">Оцените законченный вами курс звездочками ниже</div>
+			<form class="rating-wrapper">
+				<input class="rating-input" id="rating-input-1-5" type="radio" name="rating-input-1" />
+				<label class="rating-star" for="rating-input-1-5"></label>
+				<input class="rating-input" id="rating-input-1-4" type="radio" name="rating-input-1" />
+				<label class="rating-star" for="rating-input-1-4"></label>
+				<input class="rating-input" id="rating-input-1-3" type="radio" name="rating-input-1" />
+				<label class="rating-star" for="rating-input-1-3"></label>
+				<input class="rating-input" id="rating-input-1-2" type="radio" name="rating-input-1" />
+				<label class="rating-star" for="rating-input-1-2"></label>
+				<input class="rating-input" id="rating-input-1-1" type="radio" name="rating-input-1" />
+				<label class="rating-star" for="rating-input-1-1"></label>
+			</form>
+			<button class="modal-survey_btn">
+				<span>Отправить</span>
+			</button>
+		</section>
+
+
+
+		<section class="modal-survey modal-survey4" id="modal-survey4">		
+			<div class="modal-survey_title">Что мешало работать вам на этой неделе?</div>
+			<div class="modal-survey_text">Опишие несколько слов о том, что мешало вам работать на этой неделе</div>
+			<form>
+				<textarea placeholder="Какие то проблемы..."></textarea>
+				<button class="modal-survey_btn">
+					<span>Отправить</span>
+				</button>
+			</form>
+		</section>
+
+
+		<section class="modal-survey modal-survey5" id="modal-survey5">		
+			<div class="modal-survey5_img">
+				<img src="images/thanks_img.svg" alt="">
+			</div>
+			<div class="modal-survey_title">Спасибо за ответ!</div>
+			<div class="modal-survey_text">Ваша обратная связь очень важна!</div>
+			<button class="modal-survey_btn">
+				<span>Продолжить работу</span>
+			</button>
+		</section>
+
+
+		<div class="supports_error">
+			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
+		</div>
+
+
+		<!-- Подключение javascript файлов -->
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/lozad.min.js"></script>
+		<script src="js/media-player.js"></script>
+		<script src="js/html5sortable.min.js"></script>
+		<script src="js/wavesurfer.js"></script>
+		<script src="js/fancybox.min.js"></script>
+		<script src="js/nice-select.js"></script>
+		<script src="js/functions.js"></script>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

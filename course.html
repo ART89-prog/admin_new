@@ -307,7 +307,7 @@
 
 							<section class="course_info">
 								<div class="data">
-									<a href="/" class="thumb">
+									<a href="images/tmp/course_thumb.jpg" class="thumb" data-fancybox>
 										<img data-src="images/tmp/course_thumb.jpg" alt="" class="lozad">
 									</a>
 
@@ -326,7 +326,8 @@
 										<div class="desc">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов — для всех, кто относится к тексту, как к количеству знаков.Нажав на кнопку «Написать реферат», вы лично создаете уникальный текст, причем именно от вашего нажатия на кнопку зависит, какой именно текст получится — таким образом, авторские права на реферат принадлежат только вам.</div>
 
 										<div class="btns">
-											<a href="/" class="start_link btn">Начать Курс</a>
+											<a href="/" class="modal_btn start_link btn" data-content="#start-modal">Начать Курс</a>
+											<a href="/" class="modal_btn start_link btn" data-content="#reset-modal">Пересдача</a>
 										</div>
 									</div>
 								</div>
@@ -334,6 +335,28 @@
 
 								<div class="steps">
 									<div class="title">Передержка кошек, а также других питомцев на даче!</div>
+
+									<div class="items">
+										<a href="" class="step finished">
+											Что вам известно о продукции? <span>(лекция)</span>
+											<div class="exp">пройдено 21.12.1999 16:16</div>
+										</a>
+
+										<a href="" class="step active">
+											Какие существуют товары? <span>(тест, 5 вопросов)</span>
+											<div class="exp">на проверке</div>
+										</a>
+
+										<a href="" class="step">
+											Что нужно сделать? <span>(задание)</span>
+											<div class="exp">выполнено 01.01.2001 13:21, не проверено</div>
+										</a>
+
+										<div class="step lock">
+											Сколько дней в году?
+											<svg class="icon"><use xlink:href="images/sprite.svg#ic_lock2"></use></svg>
+										</div>
+									</div>
 
 									<div class="items">
 										<a href="" class="step finished">
@@ -429,13 +452,69 @@
 
 		<section class="modal" id="congratulations_modal">
 			<img data-src="images/ic_congratulations.svg" alt="" class="icon lozad">
-			<!-- <img data-src="images/ic_congratulations2.svg" alt="" class="icon lozad"> -->
 
 			<div class="modal_title">Поздравляем!<br> Вы прошли курс</div>
 
 			<div class="modal_desc">Курс пройден. Вам начислено<br> <b>999 999 999 монет</b>.</div>
 
 			<button class="close_btn btn">Продолжить</button>
+		</section>
+
+
+		<section class="start-modal" id="start-modal">
+			<svg class="icon"><use xlink:href="images/sprite.svg#start-modal"></use></svg>
+			<div class="start-modal_title">Введите пароль</div>
+			<div class="start-modal_text">Для сброса результатов, пожалуйста введите свой пароль</div>
+			<input type="password" name="" value="666666666" class="input" placeholder="****************">
+			<div class="btns">
+				<a href="/" class="start-modal_prev btn">Назад</a>
+				<a href="/" class="start-modal_next btn">Продолжить</a>
+			</div>
+		</section>
+
+
+		<section class="reset-modal start-modal" id="reset-modal">
+			<svg class="icon"><use xlink:href="images/sprite.svg#reset"></use></svg>
+			<div class="start-modal_title">Сброс результатов</div>
+			<div class="start-modal_text">Пожалуйста, выберите элементы курса которые вы хотели бы сбросить</div>
+			<div class="checkbox-items">
+				<div class="checkbox-item">
+					<input type="checkbox" id="check111" checked="">
+					<label for="check111">Тесты</label>
+				</div>
+				<div class="checkbox-item">
+					<input type="checkbox" id="check112" checked="">
+					<label for="check112">Лекции</label>
+				</div>
+				<div class="checkbox-item">
+					<input type="checkbox" id="check113">
+					<label for="check113">Задания</label>
+				</div>
+			</div>
+			<div class="btns">
+				<a href="#" class="start-modal_next btn is-close modal_btn" data-content="#reset-modal2">Продолжить</a>
+			</div>
+		</section>
+
+
+		<section class="reset-modal start-modal" id="reset-modal2">
+			<svg class="icon"><use xlink:href="images/sprite.svg#ic_warning2"></use></svg>
+			<div class="start-modal_title">Сброс результатов</div>
+			<div class="start-modal_text">Вы действительно хотите сбросить результаты курса?</div>
+			<div class="btns">
+				<a href="#" class="start-modal_prev btn red is-close">Нет, отменить</a>
+				<a href="#" class="start-modal_next btn is-close modal_btn" data-content="#reset-modal3">Да, сбросить</a>				
+			</div>
+		</section>
+
+
+		<section class="reset-modal start-modal" id="reset-modal3">
+			<svg class="icon"><use xlink:href="images/sprite.svg#check22"></use></svg>
+			<div class="start-modal_title">Результаты сброшены</div>
+			<div class="start-modal_text">Результаты тестов успешно сброшены. Можете пройти курс заного.</div>
+			<div class="btns">
+				<a href="course.html" class="start-modal_next btn">К курсу</a>				
+			</div>
 		</section>
 
 

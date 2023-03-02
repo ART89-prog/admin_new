@@ -360,12 +360,27 @@
         line-height: 22px;
     }
 
-
-    .course_info .steps .step + .step:after
-    {
-        height: 60px;
+    .course_info .steps .step:after{
+        display: none;
     }
 
+/*
+    .course_info .steps .step + .step:after
+    {
+        height: 100px;
+    }
+
+    .course_info .steps .items {
+        border-bottom: 1px solid 1px solid #CDCDCD;
+
+        padding-bottom: 20px;
+    }
+
+    .course_info .steps .items + .items{
+        border-top:none;
+        padding-top: 0;
+    }
+*/
 
 
     /*----------------
@@ -580,9 +595,6 @@
         padding:0;
     }
 
-    .audio_media .media-remaining-time{
-        display: none;
-    }
 
     .steps .items{
         overflow: hidden;
@@ -659,7 +671,10 @@
 
     .webinar_more{
         display: inline-flex !important;
-        justify-content: center;
+        justify-content: center !important;
+        padding: 0 !important;
+        align-items: center !important;
+        align-content: center !important;
     }
 
     .webinar_more a {
@@ -786,6 +801,7 @@
     }
     .training .select-left {
         margin-top: 15px;
+        display: none;
     }
     .training .courses.column4 .row.not_slide > * {
         width: 100%;
@@ -807,14 +823,215 @@
         margin-bottom: 10px;
     }
 
+    .weekly-statistics_item {
+        position: relative;
+    }
+    .weekly-statistics_item-number {
+        position: absolute;
+        bottom: 18px;
+        right: 14px;
+    }
+    .weekly-statistics_item-title {
+        max-width: 100px;
+    }
 
     
 
+    .activity_item.empty_item:hover .activity_item-description{
+    	display: none;
+    }
+
+    .analitic_item-icon {
+        max-width: 100px;
+    }
+
+
+    /* webinar3.html */
+
+    .calendar_item {
+        font-size: 13px;
+        line-height: 20px;
+    }
 
 
 
+    /* training-course */
+    .training-course_items {
+        margin-left: 0px;
+    }
+    .training-course_items > * {
+        width: 100%;
+        margin-left: 0px;
+    }
+    
+    .dialog .message .prompt .text-information {
+        width: 200px;
+    }
 
 
+    .webinar-test_wrapper-title br {
+        display: none;
+    }
 
+    .modal_course_buttons{
+        flex-direction: column;
+    }
+
+    .modal_course_buttons button + button{
+        margin-left: auto;
+    }
+
+
+    .webinar-test_button{
+        flex-direction: column;
+    }
+
+    .webinar-test_button a + a{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+
+    .webinar-online_modal {
+        padding: 24px 15px 20px;
+    }
+    .online-modal_title {
+        font-size: 18px;
+        line-height: 21px;
+        padding-bottom: 15px;
+        margin-bottom: 18px;
+    }
+    .modal_course .icon {
+        width: 190px;
+    }
+
+
+    .accordion_item .head .title{
+    	padding-right: 30px;
+    }
+
+   
+
+    .dialog .head .what_do .btn .icon{
+        margin-right: 0;
+    }
+
+    .dialog .head .what_do .btn{
+        margin-left: 5px;
+    }
+
+
+    .detailed_items {
+        margin-left: 0;
+    }
+    .detailed_items > * {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .rating-star {
+        margin-left: 12px;
+    }
+    .modal-survey .fancybox__content > .carousel__button.is-close {
+        top: 12px;
+        right: 17px;
+    }
+    .survey-modal_btn {
+        font-size: 12px;
+        line-height: 38px;
+        width: 199px;
+    }
+    .modal-survey {
+        border-radius: 15px;
+        padding: 25px;
+    }
+
+
+    .col_main .title {
+        font-size: 17px;
+        margin-bottom: 15px;
+    }
+    .task_items > * {
+        width: 100%;
+        margin-left: 0;
+    }
+    .task_items {
+        margin-left: 0;
+    }
+
+    .task2 .task_items {
+        margin-left: 0;
+    }
+    .task2 .task_items > * {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .task3 .task_items {
+        margin-left: 0;
+    }
+    .task3 .task_items > * {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .task4 .task_items {
+        margin-left: 0;
+    }
+    .task4 .task_items > * {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .task5 .task_items {
+        margin-left: 0;
+    }
+
+    .task_item a {
+        position: absolute;
+        top: 50%;
+        right: 14px;
+        transform: translateY(-50%);
+    }
+    .task_item-title {
+        width: calc(100% - 85px);
+    }
+    .task_item-text {
+        width: calc(100% - 85px);
+    }
+
+
+    .answer-option_items {
+        margin-left: 0px;
+        margin-bottom: -5px;
+    }
+    .answer-option_items > * {
+        width: 100%;
+        margin-left: 0px;
+        margin-bottom: 5px;
+    }
+    .answer-option_items label .name {
+        padding: 7px;
+        font-size: 11px;
+        line-height: 14px;
+        min-height: 40px;
+    }
+    .answer-option_items .thumb {
+        margin-bottom: 5px;
+    }
+    .answer-option .dialog .head {
+        padding: 0 0 60px;
+    }
+
+
+    .tooltip .tooltiptext {
+        margin-left: -250px;
+        top: 0;
+    }
+
+    .media-remaining-time{
+    	display: none;
+    }
 
 }

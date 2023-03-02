@@ -2,6 +2,40 @@ $(() => {
 	// Ширина окна для ресайза
 	WW = $(window).width()
 
+	$(".info_data_close").click(function(e){
+		$(".info_data").hide();
+	});
+
+	$(".resend_link a").click(function(e){
+		e.preventDefault();		
+		TIME_LIMIT = 10;
+		timePassed = 0;
+		timeLeft = TIME_LIMIT;
+		timerInterval = null;
+		startTimer();
+		$(".resend_link").hide();
+		$(".resend").show();
+
+	});
+
+	//tippy('[data-tippy-content]');
+	$('body').on('change', '.test_data .step input, .test_data .step textarea', function (e) {
+		$(".answer_btn").show();
+	});
+
+	if($(".sortable").length)
+	{
+		sortable('.sortable')[0].addEventListener('sortupdate', function(e) {
+			$(".answer_btn").show();
+		});	
+	}
+
+	$('body').on('click', '.text_block_show_more', function (e) {
+		e.preventDefault()
+		$(".text_block_hide").addClass("active");
+		$(this).hide();
+	});
+
 	$('body').on('click', '.results .arrow', function (e) {
 		e.preventDefault()
 		$(this).parent().next().slideToggle();
@@ -16,8 +50,21 @@ $(() => {
 	});
 
 
+	$(".register .submit_btn").prop("disabled", true);
 
-	$('body').on('click', '.details_item-right .details_item-link-yellow', function (e) {
+	$('body').on('change', '#remember_check', function (e) {
+		if($("#remember_check").prop("checked")){
+			$(".register .submit_btn").prop("disabled", false);
+		}
+		else
+		{
+			$(".register .submit_btn").prop("disabled", true);
+		}
+	});
+
+
+
+	/*$('body').on('click', '.details_item-right .details_item-link-yellow', function (e) {
 		e.preventDefault()
 		$(this).parent().parent().next('.details_item-body').slideToggle();
 		if($(this).hasClass("active"))
@@ -27,14 +74,29 @@ $(() => {
 		else{
 			$(this).html('<span>Подробнее</span><svg class="icon"><use xlink:href="images/sprite.svg#link-more"></use></svg>').addClass("active");
 		}
-		
+	});*/
 
-		
+	$('body').on('click', '.details_item-head', function (e) {
+		e.preventDefault()
+		$(this).next('.details_item-body').slideToggle();
+		if($(this).find(".details_item-link-yellow").hasClass("active"))
+		{
+			$(this).find(".details_item-link-yellow").html('<span>Свернуть</span><svg class="icon"><use xlink:href="images/sprite.svg#turn"></use></svg>').removeClass("active");
+		}
+		else{
+			$(this).find(".details_item-link-yellow").html('<span>Подробнее</span><svg class="icon"><use xlink:href="images/sprite.svg#link-more"></use></svg>').addClass("active");
+		}
 	});
+
+	/*$('body').on('click', '.details_item-body .details_item-link-yellow', function (e) {
+		e.preventDefault()
+		$(this).parent().hide('.details_item-body');
+	});*/
 
 	$('body').on('click', '.details_item-body .details_item-link-yellow', function (e) {
 		e.preventDefault()
 		$(this).parent().hide('.details_item-body');
+		$(this).parent().prev().find(".details_item-link-yellow").html('<span>Подробнее</span><svg class="icon"><use xlink:href="images/sprite.svg#link-more"></use></svg>').addClass("active");
 	});
 
 
@@ -51,10 +113,25 @@ $(() => {
 		$(this).toggleClass('open').next().slideToggle(300)
 	})
 
+	if($(".copy").length)
+	{
+		const clipboard =  new ClipboardJS('.copy');
+
+		clipboard.on('success', (e) => {
+			$(e.trigger).addClass('copied')
+
+			setTimeout(() => {
+				$(e.trigger).removeClass('copied')
+			}, 3000)
+
+			e.clearSelection()
+		})
+	}
+
 
 	// Аккордион
 	$('body').on('click', '.accordion .accordion_item .head', function (e) {
-		e.preventDefault()
+		/*e.preventDefault()*/
 
 		const $item = $(this).closest('.accordion_item'),
 			$accordion = $(this).closest('.accordion')
@@ -68,6 +145,31 @@ $(() => {
 			$item.addClass('active').find('.data').slideDown(300)
 		}
 	})
+
+	$(".faq_fast_list button, .faq_search").on("click", function(){
+
+		let id = "fast"+$(this).data("id");
+
+		const $item = $("#"+id).closest('.accordion_item'),
+			$accordion = $("#"+id).closest('.accordion')
+
+		/*if ($item.hasClass('active')) {
+			$item.removeClass('active').find('.data').slideUp(300)
+		} else {
+			$accordion.find('.accordion_item').removeClass('active')
+			$accordion.find('.data').slideUp(300)
+
+			$item.addClass('active').find('.data').slideDown(300)
+		}*/
+		$item.addClass('active').find('.data').slideDown(300)
+
+		setTimeout(() => {
+			const el = document.getElementById(id);
+			el.scrollIntoView({block: "center", inline: "center", behavior: "smooth"});
+		}, 400)
+		
+
+	});
 
 	$(".title_faq_result button").on("click", function(){
 		$(".js-search").val("");
@@ -95,11 +197,22 @@ $(() => {
         let	list = $(".accordion_item");
         list.each(function(index) {	
 		    let label = $(this).text();
-		    if (label.toLowerCase().indexOf(value.toLowerCase()) == -1) {
+		    let array = value.split(" ");
+		   
+		    for(let i=0;i<array.length;i++)
+		    {		    	
+		    	if (label.toLowerCase().indexOf(array[i].toLowerCase()) == -1) {
+			        $(this).hide();
+			    } else {
+			        $(this).show();
+			    }
+		    }	
+		    /*if (label.toLowerCase().indexOf(value.toLowerCase()) == -1) {
 		        $(this).hide();
 		    } else {
 		        $(this).show();
-		    }		   
+		    }*/
+
 		});
     });  
 
@@ -120,6 +233,76 @@ $(() => {
 		    }		   
 		});
     });  
+
+
+    /*$('body').on("keyup", '.js-search-courses', function(event) {
+        let value = $(this).val();
+      
+      	$(".title_courses_result span").text(value); 
+        if(value=="")
+        {
+        	$(".courses").show();
+        	$(".title_courses_result").hide();
+        }
+        else
+        {        	
+        	$(".courses").show();
+	        $(".title_courses_result").show();	
+        }*/
+
+
+        /*let	list = $(".training-course_item-title");
+        list.each(function(index) {	
+		    let label = $(this).text();
+		    let array = value.split(" ");
+		   
+		    for(let i=0;i<array.length;i++)
+		    {		    	
+		    	if (label.toLowerCase().indexOf(array[i].toLowerCase()) == -1) {
+			        $(this).parent().hide();
+			    } else {
+			        $(this).parent().show();
+			    }
+		    }	
+		});*/		
+
+		/*let	list2 = $(".courses .course .name");
+        list2.each(function(index) {	
+		    let label = $(this).text().trim();
+
+		    let array = value.split(" ");
+		    
+		    for(let i=0;i<array.length;i++)
+		    {		    	
+		    	
+		    	if (label.toLowerCase().indexOf(array[i].toLowerCase()) == -1) {
+			        $(this).closest(".course").hide();
+			    } else {
+			        $(this).closest(".course").show();
+			    }
+		    }	
+		});
+
+		$(".courses").each(function(index) {
+			let courses = $(this).find(".course");
+			let check = false;
+			courses.each(function(index) {
+				if ($(this).is(':visible')) {
+				    check = true;
+				}
+			});
+			if(!check)
+			{	
+				$(this).hide();
+			}
+		});
+
+		$(".title_courses_result button").on("click", function(){
+			$(".js-search-courses").val("");			
+	        $(".title_courses_result").hide();
+	        $(".course, .courses").show();
+		});
+    });  */
 
 
 
@@ -201,6 +384,7 @@ $(() => {
 	}
 
 	function drawLine(stem, option) {
+		
 		var pointA = stem.offset(),
 			pointB = option.offset()
 
@@ -238,6 +422,8 @@ $(() => {
 		pointB.top > pointA.top
 			? $(line).offset({ top: pointA.top, left: pointA.left })
 			: $(line).offset({ top: pointB.top, left: pointA.left })
+
+
 	}
 
 
@@ -267,6 +453,7 @@ $(() => {
 				$(".options").removeClass("ready")
 			}
 		}
+
 	});
 
 	$(".options li").on("click", function () {
@@ -300,6 +487,11 @@ $(() => {
 				$(this).removeClass("selected");
 				$(".options").removeClass("ready")
 			}
+		}
+
+		if($(".stems li.matched").length==$(".stems li").length)
+		{	
+			$(".answer_btn").show();
 		}
 	})
 
@@ -472,7 +664,7 @@ $(() => {
 	$('body').on('click', '.dialog .message .prompt .yes_btn', function (e) {
 		e.preventDefault()
 
-		$(this).toggleClass('active').closest('.prompt').find('.text').slideToggle(300)
+		$(this).toggleClass('active').closest('.prompt').find('.prompt-box').slideToggle(300)
 	})
 
 	$('body').on('click', '.dialog .message .prompt .no_btn', function (e) {
@@ -482,7 +674,7 @@ $(() => {
 	})
 
 
-	$('body').on('click', '.dialog .image_wrap .prompt_btn', function (e) {
+	$('body').on('click', '.dialog .prompt_btn', function (e) {
 		e.preventDefault()
 
 		$('.dialog .image_wrap .image .answer').addClass('show')
@@ -510,6 +702,17 @@ $(() => {
 		$('.dialog .success_text').fadeIn(300)
 		$('.dialog .next_link').css('display', 'flex')
 	})
+
+
+	// Клик по лайку
+	$(".likes button").click(function(e) {
+		e.preventDefault();
+		$(".likes button").removeClass('active');
+		$(this).addClass('active');
+	})
+
+
+
 
 
 	// Всплывашки
@@ -540,6 +743,40 @@ $(() => {
 			type: 'inline'
 		}])
 	}
+
+	if ($('#confirm_modal2').length) {
+		Fancybox.show([{
+			src: '#confirm_modal2',
+			type: 'inline'
+		}]);
+		let timerId = setInterval(() => $("#time_counter").html($("#time_counter").html()-1), 1000);
+
+		// остановить вывод через 5 секунд
+		setTimeout(() => { clearInterval(timerId); Fancybox.close(); }, 45000);
+	}
+
+
+	if ($('#modal_course').length) {
+		Fancybox.show([{
+			src: '#modal_course',
+			type: 'inline'
+		}]);		
+	}
+
+
+
+
+	// Всплывающие окна
+	$('body').on('click', '.details_item-dialog-link, .modal_content', function (e) {
+		e.preventDefault()
+
+		Fancybox.close()
+
+		Fancybox.show([{
+			src: $(this).data('content'),
+			type: 'inline'
+		}])
+	})
 
 
 	// Восстановление пароля
@@ -573,6 +810,35 @@ $(() => {
 			scrollTop: 0
 		}, 1000)
 	})
+
+	var locationHash = window.location.hash
+
+	if (locationHash && $('.faq .accordion').length) {
+		$(locationHash).addClass('active').find('.data').slideDown(300)	
+		$('html, body').stop().animate({ scrollTop: $(locationHash).offset().top }, 1000)
+	}
+
+	//слайдер на главной 
+	if($(".swiper").length)
+	{
+		const swiper = new Swiper('.swiper', {	 
+		  loop: true,
+		  autoplay: {
+		    delay: 5000,
+		  },
+
+		  // If we need pagination
+		  pagination: {
+		    el: '.swiper-pagination',
+		  },
+
+		  // Navigation arrows
+		  navigation: {
+		    nextEl: '.swiper-button-next',
+		    prevEl: '.swiper-button-prev',
+		  },
+		});
+	}
 
 })
 
@@ -696,6 +962,10 @@ $(window).scroll(function(){
 })
 
 
+$('body').on('click', '.detailed_item-link-right', function (e) {
+	e.preventDefault()
+	$(this).parent().parent().addClass('active');	
+});
 
 // Выравнивание заголовокв
 function namesHeight(context, step) {
@@ -715,14 +985,14 @@ function namesHeight(context, step) {
 }
 
 function namesHeight2(context, step) {
-	console.log(step);
+
 	let start = 0,
 		finish = step,
 		$items = context.find('> *')
 
 	//$items.find('.name, .desc').height('auto')
 	$items.each(function () {
-		console.log($items.slice(start, finish));
+	
 		setHeight($items.slice(start, finish))
 		setHeight($items.slice(start, finish))
 
@@ -740,4 +1010,25 @@ function sec2time(timeInSeconds) {
 		seconds = Math.floor(time - minutes * 60)
 
 	return pad(minutes, 2) + ':' + pad(seconds, 2);
+}
+
+let TIME_LIMIT = 10;
+let timePassed = 0;
+let timeLeft = TIME_LIMIT;
+
+
+startTimer();
+
+function startTimer() {
+  let timerInterval = null;
+  timerInterval = setInterval(() => {
+    
+    // Количество времени, которое прошло, увеличивается на  1
+    timePassed = timePassed += 1;
+    timeLeft = TIME_LIMIT - timePassed;
+    
+    // Обновляем метку оставшегося времени
+    $(".resend span").text(timeLeft);
+  }, 1000);
+  setTimeout(() => { $(".resend").hide(); $(".resend_link").show(); clearInterval(timerInterval); }, 10000);
 }

@@ -340,6 +340,12 @@
 
 												<div class="text_message">Прослушайте аудиосообщение и запишите свой ответ</div>
 											</div>
+											<div class="correction-btn">
+												<button class="btn modal_btn" data-content="#correction_modal"><img src="images/correction_btn.svg" alt=""></button>
+												<div class="correction-btn_text">
+													Нажмите данную кнопку для предложения исправления вопроса
+												</div>
+											</div>
 										</div>
 
 										<div class="message animate__animated animate__fadeInUp animate__delay-1s">
@@ -384,7 +390,22 @@
 													<button class="no_btn">Нет, спасибо</button>
 												</div>
 
-												<div class="text">Пирожок ... сделан из ... и стоит 85 ...</div>
+												<div class="prompt-box">
+													<div class="text">
+														<div class="text-information">
+															<div class="name">Подсказка</div>
+															<div class="info-hint">Служба Яндекс.Рефераты предназначена для студентов и школьников, дизайнеров и журналистов, создателей научных заявок и отчетов</div>	
+														</div>
+														<div class="likes">
+															<button class="like">
+																<svg class="icon"><use xlink:href="images/sprite.svg#like"></use></svg>
+															</button>
+															<button class="dislike modal_btn" data-content="#correction_modal5">
+																<svg class="icon"><use xlink:href="images/sprite.svg#dislike"></use></svg>
+															</button>
+														</div>																
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -448,6 +469,50 @@
 		<div class="supports_error">
 			Ваш браузер устарел рекомендуем обновить его до последней версии<br> или использовать другой более современный.
 		</div>
+
+
+		<section class="correction_modal" id="correction_modal">			
+			<div class="correction_modal-title">Предложить исправление</div>											
+			<div class="correction_modal-text">Вы хотите оставить предложение или комментарий:</div>
+			<form class="correction_modal-form">
+				<div class="line">
+					<div class="field">
+						<input id="radio-1" type="radio" name="radio">
+                    	<label for="radio-1">К вопросу тренажера</label>
+					</div>
+				</div>	
+				<div class="line">
+					<div class="field">
+						<input id="radio-2" type="radio" name="radio">
+                    	<label for="radio-2">Ко всему тренажеру</label>
+					</div>
+				</div>	
+				<div class="correction_modal-btns">
+					<a href="#" class="correction_modal-form-btn active">
+						<span>Предложить</span>					
+					</a>			
+				</div>							
+			</form>
+		</section>
+
+
+
+		<section class="correction_modal" id="correction_modal5">			
+			<div class="correction_modal-title">Что вам не понравилось?</div>											
+			<div class="correction_modal-text">Причина</div>
+			<form class="correction_modal-form">
+				<div class="line">
+					<div class="field">
+						<textarea placeholder="Ведите причину"></textarea>
+					</div>
+				</div>	
+				<div class="correction_modal-btns">
+					<a href="#" class="correction_modal-form-btn active">
+						<span>Отправить</span>					
+					</a>			
+				</div>							
+			</form>
+		</section>
 
 
 		<!-- Подключение javascript файлов -->
