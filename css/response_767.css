@@ -2015,6 +2015,7 @@
     }
     .winner_time {
         width: 100%;
+        max-width: 100%;
         margin-top: 20px;
     }
     .winner_item {

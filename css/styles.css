@@ -19651,7 +19651,7 @@ button.copy span{
     border: 1px solid #E6E6E6;
     border-radius: 9px;
     padding: 14px 14px 17px;
-    max-width: 424px;
+    max-width: 100%;
     width: 100%;
     margin-right: 28px;
 }
@@ -19687,6 +19687,8 @@ button.copy span{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 330px;
+    width: 100%;
 }
 .winner_time-text {
     color: #818093;
