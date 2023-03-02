@@ -2010,5 +2010,29 @@
 
 
 
+    .winner_items {
+        flex-wrap: wrap;
+    }
+    .winner_time {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .winner_item {
+        width: calc(100%/2 - 7px);
+        margin-right: 0;
+    }
+    .winner_priz {
+        margin-right: 0;
+        width: calc(100%/2 - 7px);
+    }
+    .winner_items {
+        justify-content: space-between;
+    }
+    .winner_items {
+        padding: 10px;
+    }
+
+
+
 
 }

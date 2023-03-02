@@ -19575,20 +19575,10 @@ button.copy span{
 .winner {
     margin-bottom: 118px;
 }
-.block2 {
-}
-.block_top {
-}
-.block_top-info {
-}
-.block_title {
-}
-.block_text {
-}
 .winner_text {
     display: flex;
     align-items: center;
-    padding: 9px;
+    padding: 9px 20px 9px 9px;
     background: rgba(11, 0, 216, 0.09);
     border-radius: 43px;
     font-weight: 500;
@@ -19605,13 +19595,13 @@ button.copy span{
 .winner_text-icon {
     margin-right: 11px;
 }
-.icon {
-}
 .winner_items {
     display: flex;
+    align-items: stretch;
     background: #FFFFFF;
     border-radius: 15px;
     padding: 18px;
+    width: 100%;
 }
 .winner_item {
     padding: 19px 41px 20px;
@@ -19645,26 +19635,72 @@ button.copy span{
     font-size: 16px;
     line-height: 19px;
     letter-spacing: -0.3px;
+    text-align: center;
 }
 .winner_item-work {
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
     color: #818093;
+    text-align: center;
 }
 .winner_priz {
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    border-radius: 9px;
+    padding: 14px 14px 17px;
+    max-width: 424px;
+    width: 100%;
+    margin-right: 28px;
 }
 .winner_priz-img {
+    border-radius: 5px;
+    object-fit: cover;
+    width: 130px;
+    height: 133px;
+    flex-shrink: 0;
+}
+.winner_priz-img img {
+    width: 100%;
+    height: 100%;
 }
 .winner_priz-info {
+    margin-left: 23px;
 }
 .winner_priz-info-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #818093;
+    margin-bottom: 3px;
 }
 .winner_priz-info-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
 }
 .winner_time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .winner_time-text {
+    color: #818093;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    margin-bottom: 5px;
 }
-.winner_time-title {
+.winner_time-title {    
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 26px;    
+    color: #000000;
+    text-align: center;
 }

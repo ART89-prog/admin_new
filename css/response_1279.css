@@ -1704,4 +1704,50 @@
         margin-bottom: 20px;
     }
 
+
+
+
+    .winner_priz {
+        max-width: 100%;
+        width: auto;
+        margin-right: 12px;
+    }
+    .winner_priz-img {
+        width: 76px;
+        height: 76px;
+    }
+    .winner_priz-info {
+        margin-left: 10px;
+    }
+    .winner_time-title {
+        font-size: 19px;
+    }
+    .winner_time-text {
+        font-size: 15px;
+        margin-bottom: 3px;
+    }
+    .winner_item {
+        margin-right: 12px;
+        padding: 15px 20px;
+    }
+    .winner_priz-info-title {
+        font-size: 15px;
+        line-height: 17px;
+    }
+    .winner {
+        margin-bottom: 40px;
+    }
+    .winner_priz {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 20px;
+    }
+    .winner_priz-info {
+        margin-left: 0px;
+        margin-top: 14px;
+        text-align: center;
+    }
+
+
+
 }

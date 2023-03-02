@@ -1034,4 +1034,20 @@
     	display: none;
     }
 
+
+
+    .winner_item {
+        width: 100%;
+    }
+    .winner_priz {
+        margin-top: 12px;
+        width: 100%;
+    }
+    .winner_time-title {
+        font-size: 17px;
+    } 
+
+
+
+
 }
