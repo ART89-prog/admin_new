@@ -1709,7 +1709,6 @@
 
     .winner_priz {
         max-width: 100%;
-        width: auto;
         margin-right: 12px;
     }
     .winner_priz-img {
@@ -1729,6 +1728,7 @@
     .winner_item {
         margin-right: 12px;
         padding: 15px 20px;
+        max-width: 200px;
     }
     .winner_priz-info-title {
         font-size: 15px;
@@ -1746,6 +1746,9 @@
         margin-left: 0px;
         margin-top: 14px;
         text-align: center;
+    }
+    .winner_time {
+        max-width: 190px;
     }
 
 

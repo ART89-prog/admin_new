@@ -2020,6 +2020,7 @@
     }
     .winner_item {
         width: calc(100%/2 - 7px);
+        max-width: 100%;
         margin-right: 0;
     }
     .winner_priz {

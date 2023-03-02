@@ -19613,6 +19613,8 @@ button.copy span{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 271px;
+    width: 100%;
 }
 .winner_item-star {
     position: absolute;
