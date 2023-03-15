@@ -19952,3 +19952,46 @@ button.copy span{
     color: #635CDB;
     font-family: "Inter";
 }
+
+
+
+.trainer_item-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding-bottom: 8px;
+}
+.trainer_item-layout {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #FFFFFF;   
+    padding: 3px 10px;
+    background: #FF6915;
+    border-radius: 6px;
+}
+.simulator_comment {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.simulator_comment span {
+    margin-left: 5px;
+    font-family: 'Inter';
+    font-weight: 800;
+    font-size: 12.0731px;
+    line-height: 16px;
+    letter-spacing: -0.258709px;
+    color: #635CDB;    
+    display: block;
+}
+.trainer_item-btn {
+    display: flex;
+    align-items: center;
+}
+.trainer_item-btn img {
+    display: block;
+    margin-right: 8px;
+}
