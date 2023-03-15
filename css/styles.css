@@ -19803,6 +19803,9 @@ button.copy span{
     padding: 14px 18px;
     background: #FFFFFF;
     border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 .comment-statistics_item-title {
     font-weight: 700;
@@ -19813,6 +19816,7 @@ button.copy span{
     margin-bottom: 8px;
 }
 .comment-statistics_item-text {
+    font-family: "Inter";
     font-weight: 900;
     font-size: 35px;
     line-height: 42px;
@@ -19823,8 +19827,6 @@ button.copy span{
     font-size: 22px;
     line-height: 1.18;
     color: #7874A3;
-}
-.step-simulator {
 }
 .step-simulator_head {
     margin-bottom: 20px;
@@ -19865,7 +19867,7 @@ button.copy span{
 }
 .step-simulator_item:before {
     position: absolute;
-    content: "";
+    font-family: "Inter";
     top: 14px;
     left: 14px;
     width: 41px;
@@ -19888,7 +19890,6 @@ button.copy span{
     line-height: 19px;
     letter-spacing: -0.3px;
     color: #7874A3;
-    margin-top: 12px;
 }
 .step-simulator_bottom {
     display: flex;
@@ -19915,10 +19916,11 @@ button.copy span{
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
-    text-align: right;
+    text-align: center;
     color: #FFFFFF;
     padding: 3px 10px;
     border-radius: 6px;
+    margin-right: 10px;
 }
 .step-simulator_desc.blue {
     background: #2F9AFD;
@@ -19948,4 +19950,5 @@ button.copy span{
     line-height: 19px;
     letter-spacing: -0.3px;
     color: #635CDB;
+    font-family: "Inter";
 }

@@ -2036,5 +2036,27 @@
 
 
 
+    .step-simulator_items > * {
+        width: calc(100%/2 - 16px);
+    }
+    .comment-statistics_items {
+        margin-left: 0;
+    }
+    .comment-statistics_items > * {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .step-simulator_item {
+        padding: 67px 15px 15px 15px;
+    }
+    .step-simulator_desc {
+        padding: 3px 5px;
+    }
+    .comment-statistics_item-text {
+        font-size: 30px;
+    }
+
+
+
 
 }

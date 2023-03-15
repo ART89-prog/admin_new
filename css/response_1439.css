@@ -938,4 +938,12 @@
     }
 
 
+
+    .step-simulator_items > * {
+        width: calc(100%/3 - 16px);
+    }
+    .step-simulator_text {
+        margin-right: 15px;
+    }
+
 }

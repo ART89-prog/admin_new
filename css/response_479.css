@@ -1057,4 +1057,17 @@
         height: 50px;
     }
 
+
+
+    .step-simulator_items {
+        margin-left: 0;
+    }
+    .step-simulator_items > * {
+        width: 100%;
+        margin-left: 0;
+    }
+    .step-simulator_desc {
+        padding: 3px 10px;
+    }
+
 }
