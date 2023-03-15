@@ -19784,22 +19784,64 @@ button.copy span{
 
 
 .comment-statistics {
+    margin-top: 35px;
+    margin-bottom: 30px;
 }
 .comment-statistics_items {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-left: -22px;
+    margin-bottom: -20px;
+}
+.comment-statistics_items > * {
+    width: calc(100%/3 - 22px);
+    margin-left: 22px;
+    margin-bottom: 20px;
 }
 .comment-statistics_item {
+    padding: 14px 18px;
+    background: #FFFFFF;
+    border-radius: 15px;
 }
 .comment-statistics_item-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    color: #7874A3;
+    margin-bottom: 8px;
 }
 .comment-statistics_item-text {
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 42px;
+    letter-spacing: -1.3px;
+    color: #292B4B;
+}
+.comment-statistics_item-text span {
+    font-size: 22px;
+    line-height: 1.18;
+    color: #7874A3;
 }
 .step-simulator {
 }
 .step-simulator_head {
+    margin-bottom: 20px;
 }
 .step-simulator_title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;  
+    color: #000;
+    margin-bottom: 3px;
 }
-.step-simulator_text {
+.step-simulator_texts {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #273179;
+    opacity: 0.53;
 }
 .step-simulator_items {
     counter-reset: step;
@@ -19866,7 +19908,8 @@ button.copy span{
     display: -webkit-box;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    max-width: 179px;
+    text-overflow: ellipsis;
+    margin-right: 61px;
 }
 .step-simulator_desc {
     font-weight: 500;
@@ -19893,4 +19936,16 @@ button.copy span{
     background: #F53261;
 }
 .step-simulator_comment {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.step-simulator_comment span {    
+    display: block;
+    margin-left: 6px;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    color: #635CDB;
 }
