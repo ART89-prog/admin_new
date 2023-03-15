@@ -723,12 +723,12 @@
     }
 
     .slick_wrap{
-        padding:10px;
+        
     }
 
-    .nav_slick button{
-        width: 25px;
-        height: 25px;
+    .nav_slick button svg{
+        width: 33px;
+        height: 33px;
     }
 
 
@@ -1047,7 +1047,14 @@
         font-size: 17px;
     } 
 
+    .icon_full{
+    	width: 30px;
+    	height: 30px;
+    }
 
-
+    .slick_video a .icon_full_video{
+        width: 50px;
+        height: 50px;
+    }
 
 }
