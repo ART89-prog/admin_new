@@ -19778,3 +19778,119 @@ button.copy span{
     height: 100px;
 }
 
+
+
+
+
+
+.comment-statistics {
+}
+.comment-statistics_items {
+}
+.comment-statistics_item {
+}
+.comment-statistics_item-title {
+}
+.comment-statistics_item-text {
+}
+.step-simulator {
+}
+.step-simulator_head {
+}
+.step-simulator_title {
+}
+.step-simulator_text {
+}
+.step-simulator_items {
+    counter-reset: step;
+    display: flex;
+    align-items: stretch;
+    margin-left: -16px;
+    margin-bottom: -22px;
+    flex-wrap: wrap;
+}
+.step-simulator_items > * {
+    position: relative;
+    width: calc(100%/4 - 16px);
+    margin-left: 16px;
+    margin-bottom: 22px;
+}
+.step-simulator_item {
+    position: relative;
+    padding: 67px 22px 21px 16px;
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+.step-simulator_item:before {
+    position: absolute;
+    content: "";
+    top: 14px;
+    left: 14px;
+    width: 41px;
+    height: 41px;
+    content: counters(step, '') '';
+    counter-increment: step;
+    text-align: center;
+    border-radius: 50%;
+    background: var(--main_color);
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: #FFFFFF;
+}
+.step-simulator_task {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: -0.3px;
+    color: #7874A3;
+    margin-top: 12px;
+}
+.step-simulator_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.step-simulator_text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 103.4%;
+    letter-spacing: -0.3px;
+    color: #292B4B;
+    margin-top: 3px;
+    margin: 0;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-width: 179px;
+}
+.step-simulator_desc {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    color: #FFFFFF;
+    padding: 3px 10px;
+    border-radius: 6px;
+}
+.step-simulator_desc.blue {
+    background: #2F9AFD;
+}
+.step-simulator_desc.green {
+    background: #5EB74F;
+}
+.step-simulator_desc.violet {
+    background: #522EDF;
+}
+.step-simulator_desc.violet {
+    background: #522EDF;
+}
+.step-simulator_desc.red {
+    background: #F53261;
+}
+.step-simulator_comment {
+}
